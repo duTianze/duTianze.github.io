@@ -1,6 +1,6 @@
 ---
 title:  jupyter notebook
-date:  2019-08-26 22:41:32
+date:  2020年10月24日15:13:10
 tags: python
 ---
 
@@ -33,10 +33,10 @@ jupyter notebook
 ```
 
 命令行状态
-![](/images/jupyter/start.png)
+![](start.png)
 
 浏览器自动跳转之后的状态
-![](/images/jupyter/view.png)
+![](view.png)
 
 * 注意：之后在网页jupyter的所有操作，都请保持终端不要关闭，因为一旦关闭终端，就会断开与本地服务器的链接，你将无法在Jupyter Notebook中进行其他操作啦.
 
@@ -50,30 +50,30 @@ jupyter notebook --generate-config
 ```
 输入这个命令之后会告诉你产生了一个`jupyter_notebook_config.py`的文件.
 
-![](/images/jupyter/config.png)
+![](config.png)
 
 按照提示的地址找到这个文件使用 *notepad++* 打开文件，然后搜索 *notebook_dir* , 修改为你要使用的地址。重新打开jupyter，网页就是新的地址了
 
-![](/images/jupyter/config_dir.png)
+![](config_dir.png)
 
 
 * 然后呢，你可以把从其他地方下载的jupyter文件放到这个目录下面，然后可以方便的打开运行啦
 
 本地
 
-![](/images/jupyter/1.png)
+![](1.png)
 
 jupyter
 
-![](/images/jupyter/2.png)
+![](2.png)
 
 ## 使用
 
 jupyter用来记笔记 单元格->单元格类型->标签
-![](/images/jupyter/kind.png)
+![](kind.png)
 
 点击运行
-![](/images/jupyter/pre.png)
+![](pre.png)
 
 可以看到标签的输出结果
-![](/images/jupyter/after.png)
+![](after.png)
