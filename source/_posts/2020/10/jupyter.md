@@ -33,7 +33,7 @@ jupyter notebook
 ```
 
 命令行状态
-![](start.png)
+![](start.png?200x)
 
 浏览器自动跳转之后的状态
 ![](view.png)
