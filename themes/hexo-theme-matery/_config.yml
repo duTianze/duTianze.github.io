@@ -123,10 +123,10 @@ logo: /logo.jpg
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
-  enable: true
+  enable: false
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/duTianze
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
