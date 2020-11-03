@@ -1,5 +1,5 @@
 ---
 title: categories
-date: 2020-10-27 20:14:57
-comments: false
+date: 2020-11-03 20:17:31
+type: "categories"
 ---
