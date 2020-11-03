@@ -78,8 +78,8 @@ music:
     show: 听听音乐
   autoHide: false    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 150580495     #require	song id / playlist id / album id / search keyword
+  type: song    #require song, playlist, album, search, artist
+  id: 5260494     #require	song id / playlist id / album id / search keyword
   fixed: true       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
