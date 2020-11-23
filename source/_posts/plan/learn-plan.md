@@ -44,7 +44,8 @@ tags: plan
 
 ## 书籍
 1. [JDK15](https://docs.oracle.com/en/java/javase/15/index.html)
-2. 深入理解java虚拟机 总感觉讲的有点浅
+2. 深入理解java虚拟机 第三版
+3. [JVM基础系列](https://www.cnblogs.com/chanshuyi/p/jvm_serial_00_why_learn_jvm.html)
 
 
 未完待续...
