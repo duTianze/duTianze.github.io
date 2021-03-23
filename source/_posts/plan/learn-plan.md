@@ -20,6 +20,7 @@ tags: plan
 ## Algs4：算法
 1. [课本官网](https://algs4.cs.princeton.edu/home)
 2. [公开课](https://www.coursera.org/learn/algorithms-part1?action=enroll)
+3. [源代码](https://github.com/kevin-wayne/algs4)
 
 ## 教程
 1. [MyBatis](https://mybatis.org/mybatis-3)
