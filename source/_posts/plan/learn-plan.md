@@ -15,7 +15,8 @@ tags: plan
 
 ## 公开课
 1. [CMU数据库15-445/645中文翻译版](https://www.bilibili.com/video/BV1f7411z7dw?from=search&seid=3190408652216344616)
-2. [awesome-cs-courses-zh](https://github.com/apachecn/awesome-cs-courses-zh)
+2. [CMU 15-445 simtoco ](https://www.simtoco.com/#/albums/video?id=1000122)
+3. [awesome-cs-courses-zh](https://github.com/apachecn/awesome-cs-courses-zh)
 
 ## Algs4：算法
 1. [课本官网](https://algs4.cs.princeton.edu/home)
