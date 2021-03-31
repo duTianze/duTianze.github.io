@@ -1,0 +1,1504 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="TICKscript syntax, duTianze">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>TICKscript syntax | duTianze</title>
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="duTianze" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/logo.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">duTianze</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/logo.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">duTianze</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">TICKscript syntax</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/kapacitor/">
+                                <span class="chip bg-color">kapacitor</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-09-29
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    20 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>入门部分介绍了节点和管道的关键概念，节点代表流程调用单位，将数据进行批处理或逐点流处理，然后更改数据、存储数据或基于数据更改触发警报，管道是节点的逻辑组织链。<br>在Kapacitor中，TICKscript用于定义任务和模板任务，这些模板任务可作为生成新任务的模板。</p>
+<p>TICKscript语法的借鉴了许多不同的语言，最多的是GO。</p>
+<p>使用TICKscript时，将遇到几个语法子空间</p>
+<ul>
+<li><strong>InfluxQL</strong> - 创建查询节点时，需要一个表示InfluxQL语句的字符串</li>
+<li><strong>Lambda expressions</strong> - 其他节点和方法使用Lambda表达式</li>
+</ul>
+<p>如入门中所述，管道是有向无环图，它包含有限数量的节点和边。每个边从一个节点指向另一个节点，通常从数据源节点开始，到数据集节点，再将其结果传递到数据处理节点。</p>
+<a id="more"></a>
+
+<h1 id="TICKscript语法"><a href="#TICKscript语法" class="headerlink" title="TICKscript语法"></a>TICKscript语法</h1><p>TICKscript区分大小写，并使用Unicode。TICKscript解析器从上到下，从左到右扫描TICKscript代码，实例化变量和节点，然后在遇到它们时将它们链接成为管道。<br>加载TICKscript时，解析器检查在节点上调用的链接方法是否有效。如果遇到无效的链接方法，解析器将抛出错误消息**no method or property <identifier> on <node type>**。</p>
+<h2 id="代码表示"><a href="#代码表示" class="headerlink" title="代码表示"></a>代码表示</h2><p>kong’he源文件使用UTF-8进行编码，脚本分为声明和表达式。只有一行的声明会创建变量；可以有多行的表达式会创建整个管道、管道链或管道分支。</p>
+<ul>
+<li>空白 空格用来分隔变量名、运算符、变量，缩进用来表明方法调用的层次结构。</li>
+<li>注释 通过在文本前使用一对正斜杠<code>//</code>在一行上创建</li>
+</ul>
+<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p>关键字是在语言中具有特殊含义的标记，因此不能用作函数或变量的标识符。</p>
+<table>
+<thead>
+<tr>
+<th>字</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TRUE</td>
+<td>“true”</td>
+</tr>
+<tr>
+<td>FALSE</td>
+<td>“false”</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>and</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>or</td>
+</tr>
+<tr>
+<td>lambda:</td>
+<td>后面的标志将被解释为lambda表达式。</td>
+</tr>
+<tr>
+<td>var</td>
+<td>变量声明</td>
+</tr>
+<tr>
+<td>dbrp</td>
+<td>数据库声明</td>
+</tr>
+</tbody></table>
+<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><p>标准操作符</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>说明</th>
+<th>用例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加法或字符串连接</td>
+<td>3 + 6，total + count ， ‘foo’ + ‘bar’</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+<td>10 - 1, total - errs</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+<td>3 * 6，ratio * 100.0</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除法</td>
+<td>36 / 4, errs / total</td>
+</tr>
+<tr>
+<td>==</td>
+<td>等于</td>
+<td>1 == 1, date == today</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不等</td>
+<td>result != 0, id != “testbed”</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+<td>4 &lt; 5, timestamp &lt; today</td>
+</tr>
+<tr>
+<td>&lt; =</td>
+<td>小于等于</td>
+<td>3 &lt;= 6, flow &lt;= mean</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+<td>6 &gt; 3.0, delta &gt; sigma</td>
+</tr>
+<tr>
+<td>&gt; =</td>
+<td>大于等于</td>
+<td>9.0 &gt;= 8.1, quantity &gt;= threshold</td>
+</tr>
+<tr>
+<td>=~</td>
+<td>正则匹配</td>
+<td>tag =~ /^cz\d+/</td>
+</tr>
+<tr>
+<td>!~</td>
+<td>正则不匹配</td>
+<td>tag !~ /^sn\d+/</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑不</td>
+<td>!TRUE, !(cpu_idle &gt; 70)</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>逻辑与</td>
+<td>rate &lt; 20.0 AND rate &gt;= 10</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>逻辑或</td>
+<td>status &gt; warn OR delta &gt; sigma</td>
+</tr>
+</tbody></table>
+<p>链操作符</p>
+<table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="left">说明</th>
+<th align="left">用例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&verbar;</td>
+<td align="left">声明一个链方法调用，该调用将创建一个新节点的实例并链接到上方的节点</td>
+<td align="left">stream  &verbar; from()</td>
+</tr>
+<tr>
+<td align="left"><code>.</code></td>
+<td align="left">声明属性方法调用，设置所属的节点或更改内部属性</td>
+<td align="left">from()  .database(mydb)</td>
+</tr>
+<tr>
+<td align="left">@</td>
+<td align="left">声明用户定义的函数(UDF)调用。本质上是一种将新的UDF节点添加到管道的链接方法</td>
+<td align="left">from()    @MyFunc()</td>
+</tr>
+</tbody></table>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>使用关键字<code>var</code>声明变量，变量是不可变的，也就是不能重新赋予新值，但是可以在其他声明中使用。<br>变量也在模板任务中充当占位符，以便在用模板创建新任务时填充。<br>命名变量时，必须以字母开头，跟任意数量的字母，数字和下划线。<br>变量的保存类型取决于为其分配的文字值</p>
+<h3 id="任务的变量声明"><a href="#任务的变量声明" class="headerlink" title="任务的变量声明"></a>任务的变量声明</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> my_var <span class="token operator">=</span> <span class="token string">'foo'</span>
+<span class="token keyword">var</span> MY_VAR <span class="token operator">=</span> <span class="token string">'BAR'</span>
+<span class="token keyword">var</span> my_float <span class="token operator">=</span> <span class="token number">2.71</span>
+<span class="token keyword">var</span> my_int <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">var</span> my_node <span class="token operator">=</span> stream</code></pre>
+<h3 id="模板任务的变量声明"><a href="#模板任务的变量声明" class="headerlink" title="模板任务的变量声明"></a>模板任务的变量声明</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> measurement string
+<span class="token keyword">var</span> frame duration
+<span class="token keyword">var</span> warn <span class="token operator">=</span> float
+<span class="token keyword">var</span> period <span class="token operator">=</span> 12h
+<span class="token keyword">var</span> critical <span class="token operator">=</span> <span class="token number">3.0</span></code></pre>
+<h2 id="文字值"><a href="#文字值" class="headerlink" title="文字值"></a>文字值</h2><p>TICKscript识别五个类型标识符，这些标识符可用于模板任务中。否则，文字的类型将从其声明中进行解释。</p>
+<p>类型标识符</p>
+<table>
+<thead>
+<tr>
+<th align="left">标识</th>
+<th align="left">用例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">string</td>
+<td align="left">在模板任务中，将变量声明为<code>string</code></td>
+</tr>
+<tr>
+<td align="left">duration</td>
+<td align="left">在模板任务中，将变量声明为<code>duration</code></td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td align="left">在模板任务中，将变量声明为字<code>int64</code></td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td align="left">在模板任务中，将变量声明为<code>float64</code>。</td>
+</tr>
+<tr>
+<td align="left">lambda</td>
+<td align="left">在模板任务中，将变量声明为Lambda表达式类型</td>
+</tr>
+</tbody></table>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><p>布尔值是使用布尔关键字<code>TRUE</code>和<code>FALSE</code>生成的</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> true_bool <span class="token operator">=</span> TRUE
+<span class="token operator">...</span>
+   <span class="token operator">|</span><span class="token function">flatten</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">,</span><span class="token string">'port'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">dropOriginalFieldName</span><span class="token punctuation">(</span>FALSE<span class="token punctuation">)</span>
+<span class="token operator">...</span></code></pre>
+<h3 id="数字值"><a href="#数字值" class="headerlink" title="数字值"></a>数字值</h3><p>整数解释为<code>int64</code>，小数解释为<code>float64</code>，以<code>0</code>开头的整数解释为八进制。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> my_int <span class="token operator">=</span> <span class="token number">6</span>
+<span class="token keyword">var</span> my_float <span class="token operator">=</span> <span class="token number">2.71828</span>
+<span class="token keyword">var</span> my_octal <span class="token operator">=</span> <span class="token number">0400</span></code></pre>
+<h3 id="持续时间值"><a href="#持续时间值" class="headerlink" title="持续时间值"></a>持续时间值</h3><p>持续时间由两部分组成：整数和持续时间单位。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> span <span class="token operator">=</span> 10s
+<span class="token keyword">var</span> frequency <span class="token operator">=</span> 10s
+<span class="token operator">...</span>
+<span class="token keyword">var</span> views <span class="token operator">=</span> batch
+    <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'SELECT sum(value) FROM "pages"."default".views'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>1h<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>1h<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token function">time</span><span class="token punctuation">(</span>1m<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">*</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></code></pre>
+<h3 id="时间单位"><a href="#时间单位" class="headerlink" title="时间单位"></a>时间单位</h3><table>
+<thead>
+<tr>
+<th align="left">单位</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">u or µ</td>
+<td align="left">微秒（百万分之一秒）</td>
+</tr>
+<tr>
+<td align="left">ms</td>
+<td align="left">毫秒（千分之一秒）</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td align="left">秒</td>
+</tr>
+<tr>
+<td align="left">m</td>
+<td align="left">分钟</td>
+</tr>
+<tr>
+<td align="left">h</td>
+<td align="left">小时</td>
+</tr>
+<tr>
+<td align="left">d</td>
+<td align="left">天</td>
+</tr>
+<tr>
+<td align="left">w</td>
+<td align="left">周</td>
+</tr>
+</tbody></table>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串以一个或三个单引号包起来：<code>&#39;</code> 、<code>&#39;&#39;&#39;</code>，可以使用加法<code>+</code>来连接字符串。单引号中使用单引号要转义，三引号不用转义。这里面使用双引号都不用转义。<br>为了使长而复杂的字符串更易读，在字符串中允许使用换行符。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> region1 <span class="token operator">=</span> <span class="token string">'EMEA'</span>
+<span class="token keyword">var</span> old_standby <span class="token operator">=</span> <span class="token string">'foo'</span> <span class="token operator">+</span> <span class="token string">'bar'</span>
+<span class="token keyword">var</span> query1 <span class="token operator">=</span> <span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = \'cpu-total\' '</span>
+<span class="token keyword">var</span> query2 <span class="token operator">=</span> <span class="token string">''</span><span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = '</span>cpu<span class="token operator">-</span>total<span class="token string">' '</span><span class="token string">''</span>
+
+batch
+   <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = '</span>cpu<span class="token operator">-</span>total<span class="token string">' '</span><span class="token string">''</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 多行字符串</span>
+batch
+   <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span>'SELECT <span class="token number">100</span> <span class="token operator">-</span> <span class="token function">mean</span><span class="token punctuation">(</span>usage_idle<span class="token punctuation">)</span>
+           AS stat
+           FROM <span class="token string">"telegraf"</span><span class="token punctuation">.</span><span class="token string">"autogen"</span><span class="token punctuation">.</span><span class="token string">"cpu"</span>
+           WHERE cpu <span class="token operator">=</span> \'cpu<span class="token operator">-</span>total\'
+           '<span class="token punctuation">)</span></code></pre>
+<h3 id="字符串模板"><a href="#字符串模板" class="headerlink" title="字符串模板"></a>字符串模板</h3><p>字符串模板允许将节点属性，标签和字段添加到字符串中，需要将其包装在双花括号内。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/mem_used'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span></code></pre>
+<p>字符串模板还可以包括流程语句，例如<code>if ... else</code>以及对内部格式化方法的调用。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125; is &amp;#123;&amp;#123; if eq .Level "OK" &amp;#125;&amp;#125;alive&amp;#123;&amp;#123; else &amp;#125;&amp;#125;dead&amp;#123;&amp;#123; end &amp;#125;&amp;#125;: &amp;#123;&amp;#123; index .Fields "emitted" | printf "%0.3f" &amp;#125;&amp;#125; points/10s.'</span><span class="token punctuation">)</span></code></pre>
+<h3 id="字符串列表"><a href="#字符串列表" class="headerlink" title="字符串列表"></a>字符串列表</h3><p>字符串列表是在两个方括号之间声明的字符串的集合，可以使用文字，其他变量的标识符或星号通配符<code>*</code>来声明它们。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token string">'foo'</span>
+<span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token string">'bar'</span>
+<span class="token keyword">var</span> foobar_list <span class="token operator">=</span> <span class="token punctuation">[</span>foo<span class="token punctuation">,</span> bar<span class="token punctuation">]</span>
+<span class="token keyword">var</span> cpu_groups <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string">'host'</span><span class="token punctuation">,</span> <span class="token string">'cpu'</span> <span class="token punctuation">]</span>
+<span class="token operator">...</span>
+stream
+   <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span>cpu_groups<span class="token punctuation">)</span>
+<span class="token operator">...</span></code></pre>
+<p>模板中字符串列表的应用-<code>groups</code></p>
+<pre class=" language-javascript"><code class="language-javascript">dbrp <span class="token string">"telegaf"</span><span class="token punctuation">.</span><span class="token string">"not_autogen"</span>
+
+<span class="token keyword">var</span> measurement string
+<span class="token keyword">var</span> where_filter <span class="token operator">=</span> lambda<span class="token punctuation">:</span> TRUE
+<span class="token keyword">var</span> groups <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span>
+<span class="token keyword">var</span> field string
+<span class="token keyword">var</span> warn lambda
+<span class="token keyword">var</span> crit lambda
+<span class="token keyword">var</span> window <span class="token operator">=</span> 5m
+<span class="token keyword">var</span> slack_channel <span class="token operator">=</span> <span class="token string">'#alerts'</span>
+
+stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span>measurement<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>where_filter<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span>groups<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">window</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">mean</span><span class="token punctuation">(</span>field<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>warn<span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>crit<span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">slack</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">channel</span><span class="token punctuation">(</span>slack_channel<span class="token punctuation">)</span></code></pre>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p>正则表达式以正斜杠开始和结束：<code>/</code>，语法和其他语言一样。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> cz_turbines <span class="token operator">=</span> <span class="token regex">/^cz\d+/</span>
+<span class="token keyword">var</span> adr_senegal <span class="token operator">=</span> <span class="token regex">/\.sn$/</span>
+<span class="token keyword">var</span> local_ips <span class="token operator">=</span> <span class="token regex">/^192\.168\..*/</span>
+<span class="token operator">...</span>
+<span class="token keyword">var</span> locals <span class="token operator">=</span> stream
+   <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'responses'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"node"</span> <span class="token operator">=</span><span class="token operator">~</span> local_ips <span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> south_afr <span class="token operator">=</span> stream
+   <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'responses'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"dns_node"</span> <span class="token operator">=</span><span class="token operator">~</span> <span class="token regex">/\.za$/</span> <span class="token punctuation">)</span></code></pre>
+<p>Lambda表达式作为文字，<code>lambda</code>开头，后跟冒号<code>:</code>。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> my_lambda <span class="token operator">=</span> lambda<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token operator">></span> <span class="token number">0</span>
+<span class="token keyword">var</span> lazy_lambda <span class="token operator">=</span> lambda<span class="token punctuation">:</span> <span class="token string">"usage_idle"</span> <span class="token operator">&lt;</span> <span class="token number">95</span>
+<span class="token operator">...</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> stream
+  <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">...</span>
+<span class="token keyword">var</span> alert <span class="token operator">=</span> data
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/cpu_used'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> <span class="token number">70</span> OR <span class="token string">"sigma"</span> <span class="token operator">></span> <span class="token number">2.5</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> <span class="token number">80</span> OR <span class="token string">"sigma"</span> <span class="token operator">></span> <span class="token number">3.0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> <span class="token number">90</span> OR <span class="token string">"sigma"</span> <span class="token operator">></span> <span class="token number">3.5</span><span class="token punctuation">)</span></code></pre>
+<h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> stream
+  <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span><span class="token string">'autogen'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"cpu"</span> <span class="token operator">==</span> <span class="token string">'cpu-total'</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token number">100.0</span> <span class="token operator">-</span> <span class="token string">"usage_idle"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">window</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>span<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>frequency<span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">mean</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'stat'</span><span class="token punctuation">)</span>
+<span class="token operator">...</span>
+<span class="token keyword">var</span> alert <span class="token operator">=</span> data
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/cpu_used'</span><span class="token punctuation">)</span>
+<span class="token operator">...</span></code></pre>
+<h2 id="使用标签，字段和变量"><a href="#使用标签，字段和变量" class="headerlink" title="使用标签，字段和变量"></a>使用标签，字段和变量</h2><p>在任何脚本中，仅仅声明变量是不够的。它们保存的值也必须能被访问。在TICKscript中，还必须使用从InfluxDB中提取的标签和字段中保存的值。</p>
+<pre class=" language-javascript"><code class="language-javascript">   <span class="token keyword">var</span> db <span class="token operator">=</span> <span class="token string">'website'</span>                       <span class="token comment" spellcheck="true">// 访问变量 声明字符串使用单引号</span>
+   <span class="token operator">...</span>
+   <span class="token keyword">var</span> data <span class="token operator">=</span> stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span>
+   <span class="token operator">...</span>
+    <span class="token keyword">var</span> data <span class="token operator">=</span> stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span><span class="token string">'autogen'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>                      <span class="token comment" spellcheck="true">// 方法调用中: 访问tag和field，使用单引号。</span>
+       <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"cpu"</span> <span class="token operator">==</span> <span class="token string">'cpu-total'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Lambda表达式中: 访问tag和field，使用双引号</span>
+    <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token number">100.0</span> <span class="token operator">-</span> <span class="token string">"usage_idle"</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>                          
+    <span class="token operator">...</span></code></pre>
+<p>命名lambda表达式结果，使用<code>as()</code>命名Lambda表达式结果并将其作为字段添加到数据集。<code>as()</code>就像InfluxQL中的<code>AS</code>关键字一样。<br>像数据标签和字段一样，lambda表达式结果可以在Lambda表达式中用双引号访问，也可以在方法中用单引号访问。</p>
+<pre class=" language-javascript"><code class="language-javascript">  <span class="token operator">...</span>
+      <span class="token operator">|</span><span class="token function">window</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+      <span class="token operator">|</span><span class="token function">mean</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'stat'</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true">// Thresholds</span>
+    <span class="token keyword">var</span> alert <span class="token operator">=</span> data
+      <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/cpu_used'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> info OR <span class="token string">"sigma"</span> <span class="token operator">></span> infoSig<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> warn OR <span class="token string">"sigma"</span> <span class="token operator">></span> warnSig<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> crit OR <span class="token string">"sigma"</span> <span class="token operator">></span> critSig<span class="token punctuation">)</span></code></pre>
+<p>使用InfluxQL节点进行现场访问，链方法<code>mean()</code>是节点类型InfluxQL的别名</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> stream
+ <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span><span class="token string">'autogen'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"cpu"</span> <span class="token operator">==</span> <span class="token string">'cpu-total'</span><span class="token punctuation">)</span>
+ <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token number">100.0</span> <span class="token operator">-</span> <span class="token string">"usage_idle"</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+ <span class="token operator">|</span><span class="token function">window</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+ <span class="token operator">|</span><span class="token function">mean</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'stat'</span><span class="token punctuation">)</span></code></pre>
+<h3 id="访问字符串模板中的值"><a href="#访问字符串模板中的值" class="headerlink" title="访问字符串模板中的值"></a>访问字符串模板中的值</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/mem_used'</span><span class="token punctuation">)</span> 
+  <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span></code></pre>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><pre class=" language-javascript"><code class="language-javascript">   <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">float</span><span class="token punctuation">(</span><span class="token string">"total_error_responses"</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">float</span><span class="token punctuation">(</span><span class="token string">"total_responses"</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100.0</span><span class="token punctuation">)</span></code></pre>
+<h3 id="数值精度"><a href="#数值精度" class="headerlink" title="数值精度"></a>数值精度</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/mem_used'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" | printf "%0.2f" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+
+  stream
+   <span class="token comment" spellcheck="true">// usage_idle值四舍五入到百分之一的百分比，然后用于警报节点的阈值方法中的比较。然后将其写入警报消息。</span>
+   <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+   <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">floor</span><span class="token punctuation">(</span><span class="token string">"usage_idle"</span> <span class="token operator">*</span> <span class="token number">1000.0</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">1000.0</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'thousandths'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token string">'usage_user'</span><span class="token punctuation">,</span><span class="token string">'usage_idle'</span><span class="token punctuation">,</span><span class="token string">'thousandths'</span><span class="token punctuation">)</span>
+   <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"thousandths"</span> <span class="token operator">&lt;</span>  <span class="token number">95.000</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Fields "thousandths" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+         <span class="token comment" spellcheck="true">// Whenever we get an alert write it to a file.</span>
+      <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'/tmp/alerts.log'</span><span class="token punctuation">)</span></code></pre>
+<h3 id="时间精度"><a href="#时间精度" class="headerlink" title="时间精度"></a>时间精度</h3><pre class=" language-javascript"><code class="language-javascript">stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">window</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>5m<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>5m<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">align</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">mean</span><span class="token punctuation">(</span><span class="token string">'usage_idle'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'usage_idle'</span><span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">influxDBOut</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span><span class="token string">'autogen'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'mean_cpu_idle'</span><span class="token punctuation">)</span>
+       <span class="token punctuation">.</span><span class="token function">precision</span><span class="token punctuation">(</span><span class="token string">'s'</span><span class="token punctuation">)</span>
+<span class="token operator">...</span></code></pre>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>TICKscript中有两种类型的语句：声明和表达式。声明可以声明TICKscript可以使用的变量或数据库。表达式表示方法调用的管道，这些方法创建处理节点并设置其属性。</p>
+<h3 id="声明-1"><a href="#声明-1" class="headerlink" title="声明"></a>声明</h3><p>TICKscript使用两种类型的声明：数据库声明和变量声明。</p>
+<p>数据库声明以关键字<code>dbrp</code>开头，后跟两个以句点分隔的字符串。第一个字符串声明将使用脚本的默认数据库。第二个字符串声明其保留策略。使用时，数据库声明语句应为TICKscript的第一个声明。</p>
+<pre class=" language-javascript"><code class="language-javascript">dbrp <span class="token string">"telegraf"</span><span class="token punctuation">.</span><span class="token string">"autogen"</span></code></pre>
+<p>变量声明以var关键字开头，后跟要声明的变量的标识符。赋值运算符后跟一个文字右侧值，该值将设置新变量的类型和值。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> db <span class="token operator">=</span> <span class="token string">'website'</span>
+<span class="token keyword">var</span> rp <span class="token operator">=</span> <span class="token string">'autogen'</span>
+<span class="token keyword">var</span> measurement <span class="token operator">=</span> <span class="token string">'responses'</span>
+<span class="token keyword">var</span> whereFilter <span class="token operator">=</span> lambda<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token string">"lb"</span> <span class="token operator">==</span> <span class="token string">'17.99.99.71'</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">'test rule'</span>
+<span class="token keyword">var</span> idVar <span class="token operator">=</span> name <span class="token operator">+</span> <span class="token string">':&amp;#123;&amp;#123;.Group&amp;#125;&amp;#125;'</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span>rp<span class="token punctuation">)</span></code></pre>
+<h3 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h3><p>表达式以节点标识符或包含另一个表达式的变量标识符开头，然后它将链接方法，属性方法或用户定义的函数链接在一起。管道运算符<code>|</code>表示链接方法调用的开始，<br>将新节点返回到链中。点运算符<code>.</code>添加属性设置器。@运算符<code>@</code>引入了用户定义的功能。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// Dataframe</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> batch
+  <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token string">'SELECT mean(used_percent) AS stat FROM "telegraf"."autogen"."mem" '</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// Thresholds</span>
+<span class="token keyword">var</span> alert <span class="token operator">=</span> data
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/mem_used'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> info OR <span class="token string">"sigma"</span> <span class="token operator">></span> infoSig<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> warn OR <span class="token string">"sigma"</span> <span class="token operator">></span> warnSig<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> crit OR <span class="token string">"sigma"</span> <span class="token operator">></span> critSig<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// Alert</span>
+alert
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'/tmp/mem_alert_log.txt'</span><span class="token punctuation">)</span></code></pre>
+<h3 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h3><p>除<code>batch</code>和<code>stream</code>外，节点始终出现在管道表达式中，它们是通过链接方法创建的。通常使用节点类型名称标识链接方法，一个明显的例外是InfluxQL节点，它使用别名。</p>
+<p>对于每种节点类型，创建该类型实例的方法使用相同的签名。因此如果一个<code>query</code>节点穿件一个<code>eval</code>节点并把它加入链，并且如果一个<code>from</code>节点穿件一个<code>eval</code>节点并把它加入链。<br>创建新的eval节点的链接方法将接受相同的参数，不管是哪个节点创建的。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> stream
+  <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token string">'telegraf'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span><span class="token string">'autogen'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span><span class="token string">'cpu'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"cpu"</span> <span class="token operator">==</span> <span class="token string">'cpu-total'</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token number">100.0</span> <span class="token operator">-</span> <span class="token string">"usage_idle"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'used'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> data <span class="token operator">=</span> batch
+  <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = '</span>cpu<span class="token operator">-</span>total<span class="token string">' '</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>重申一下，管道是由一个或多个表达式定义的节点的逻辑顺序链，管道可以以两个模式定义节点之一开始：批处理或流。<br>批处理管道的数据帧是在查询定义节点中定义的。用于流管道的数据流是在<code>from</code>定义节点中定义的。在定义节点之后，可以跟随任何其他类型的节点。<br>通过用管道<code>|</code>字符将节点添加到管道。可以使用<code>@</code>字符将用户定义的函数添加到管道中。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// Dataframe</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> batch
+  <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = '</span>cpu<span class="token operator">-</span>total<span class="token string">' '</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// Thresholds</span>
+<span class="token keyword">var</span> alert <span class="token operator">=</span> data
+  <span class="token operator">|</span><span class="token function">eval</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token function">sigma</span><span class="token punctuation">(</span><span class="token string">"stat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token keyword">as</span><span class="token punctuation">(</span><span class="token string">'sigma'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">keep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; index .Tags "host"&amp;#125;&amp;#125;/cpu_used'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">message</span><span class="token punctuation">(</span><span class="token string">'&amp;#123;&amp;#123; .ID &amp;#125;&amp;#125;:&amp;#123;&amp;#123; index .Fields "stat" &amp;#125;&amp;#125;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> info OR <span class="token string">"sigma"</span> <span class="token operator">></span> infoSig<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> warn OR <span class="token string">"sigma"</span> <span class="token operator">></span> warnSig<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">crit</span><span class="token punctuation">(</span>lambda<span class="token punctuation">:</span> <span class="token string">"stat"</span> <span class="token operator">></span> crit OR <span class="token string">"sigma"</span> <span class="token operator">></span> critSig<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// Alert</span>
+alert
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'/tmp/cpu_alert_log.txt'</span><span class="token punctuation">)</span></code></pre>
+<h1 id="节点类型分类"><a href="#节点类型分类" class="headerlink" title="节点类型分类"></a>节点类型分类</h1><h2 id="特殊节点"><a href="#特殊节点" class="headerlink" title="特殊节点"></a>特殊节点</h2><p>这些节点是特殊的，因为可以使用其类型名称以外的标识符来创建和返回它们。可以使用代表其功能方面的别名。这可能适用于所有实例（如InfluxQL节点），或仅适用于一种实例（如Alert节点）。</p>
+<ul>
+<li><code>alert</code> 可以作为<code>deadman</code>开关返回</li>
+<li><code>influxQL</code> 直接在InfluxQL中调用函数，因此当调用使用InfluxQL方法名称的TICKScript链接方法时可以返回该函数。<ul>
+<li><code>from()|mean()</code> 在from节点中定义的数据流上调用均值函数，并返回InfluxQL节点。</li>
+<li><code>query()|mode()</code> 在查询节点中定义的数据帧上调用模式函数，并返回一个InfluxQL节点。<h2 id="数据源定义节点"><a href="#数据源定义节点" class="headerlink" title="数据源定义节点"></a>数据源定义节点</h2>TICKscript管道中的第一个节点是<code>batch</code>或<code>stream</code>。它们定义了用于处理数据的数据源。</li>
+</ul>
+</li>
+<li><code>batch</code> 声明中未使用链接方法调用语法。</li>
+<li><code>stream</code> 声明中未使用链接方法调用语法。<h2 id="数据定义节点"><a href="#数据定义节点" class="headerlink" title="数据定义节点"></a>数据定义节点</h2>模式定义节点之后通常是节点，其目的是定义要由其他节点处理的数据的帧或数据流。</li>
+<li><code>from</code> 有一个空的链接方法。只能跟随<code>stream</code>。使用属性方法进行配置。</li>
+<li><code>query</code> 链接方法采用查询字符串。只能跟随<code>batch</code><h2 id="数据操作节点"><a href="#数据操作节点" class="headerlink" title="数据操作节点"></a>数据操作节点</h2>可以使用操作节点来更改或生成数据集中的值。</li>
+<li><code>default</code> 有一个空的链接方法。它的<code>field</code>和<code>tag</code>属性可用于设置数据系列中字段和标签的默认值。</li>
+<li><code>sample</code> 接收int64或duration字符串。它根据计数或时间段提取数据样本。</li>
+<li><code>shift</code> 接收一个持续时间字符串。它移动数据点时间戳。持续时间字符串可以以减号开头，以将标记及时向后移动。</li>
+<li><code>where</code> 接收一个lambda节点。它可以与流管道一起使用，例如InfluxQL中的WHERE语句。</li>
+<li><code>window</code> 有一个空的链接方法。使用属性方法进行配置。它通常在<code>stream</code>节点的管道中的<code>from</code>之后，以在移动时间范围内缓存数据。<h2 id="处理节点"><a href="#处理节点" class="headerlink" title="处理节点"></a>处理节点</h2>一旦定义了数据集，就可以将其传递到其他节点，这些节点将对其进行处理，对其进行转换或将基于其中的更改触发其他处理。</li>
+<li>用于更改数据结构或将管道混合在一起的节点<ul>
+<li><code>combine</code> 接收一个或多个lambda表达式的列表。它可以将来自单个节点的数据与其自身进行合并。</li>
+<li><code>eval</code> 接收一个或多个lambda表达式的列表。它在接收到的每个数据点上评估表达式，并使用其as属性，使结果可用于管道中的后续节点。</li>
+<li><code>groupBy</code> 接收一个或多个字符串的列表，这些字符串表示该系列的标签。它按标签对传入数据进行分组。</li>
+<li><code>join</code> 接收一个或多个引用管道表达式的变量的列表。它根据匹配的时间戳将来自任意数量管道的数据连接起来。</li>
+<li><code>union</code> 接收一个或多个引用管道表达式的变量的列表。它创建任意数量的管道的并集。</li>
+</ul>
+</li>
+<li>用于转换或处理数据集中的数据点的节点<ul>
+<li><code>delete</code> 空链接方法。它依靠属性(<code>field</code>，<code>tag</code>)从数据点删除字段和标签。</li>
+<li><code>derivative</code> 接收一个字符串，该字符串表示要为其计算导数的字段。</li>
+<li><code>flatten</code> 空链接方法。它依靠属性在特定的维度上展开一组点。</li>
+<li><code>influxQL</code> 特殊节点，它提供对InfluxQL功能的访问。不能直接创建。</li>
+<li><code>stateCount</code> 链接方法采用lambda表达式。它计算处于给定状态的连续点的数量。</li>
+<li><code>stateDuration</code> 链接方法采用lambda表达式。它计算给定状态持续的时间。</li>
+<li><code>status</code> 链接方法采用持续时间表达式。它以给定的时间间隔发出有关另一个节点的内部统计信息。</li>
+</ul>
+</li>
+<li>触发事件，流程的节点<ul>
+<li><code>alert</code> 空链接方法。它依靠许多属性来配置警报的发出。</li>
+<li><code>deadman</code> 一个辅助函数，它是警报的别名，当数据流低于指定的阈值时会触发该警报。</li>
+<li><code>httpOut</code> 链接方法需要一个字符串。它缓存接收到的每个组的最新数据，并使用字符串参数作为最终定位器上下文在Kapicator http服务器上将其提供。</li>
+<li><code>httpPost</code> 链接方法采用字符串数组。也可以是空的。它将数据发布到字符串数组中指定的HTTP端点。</li>
+<li><code>influxDBOut</code> 空链接方法–通过属性设置器配置。它在接收到数据时将其写入InfluxDB。</li>
+<li><code>k8sAutoscale</code> 空链接方法。它依赖于许多配置属性。它会在Kubernetes™ 资源上触发自动缩放。</li>
+<li><code>log</code> 空链接方法。它依赖于级别和前缀属性进行配置。它记录通过它的所有数据。<h2 id="用户自定义节点"><a href="#用户自定义节点" class="headerlink" title="用户自定义节点"></a>用户自定义节点</h2>用户定义的功能是实现由用户程序或脚本定义的功能的节点，这些程序作为单独的进程运行，并通过套接字或标准系统数据流与Kapacitor进行通信</li>
+</ul>
+</li>
+</ul>
+<h1 id="InfluxQL-in-TICKscript"><a href="#InfluxQL-in-TICKscript" class="headerlink" title="InfluxQL in TICKscript"></a>InfluxQL in TICKscript</h1><p>TICKscript中，InfluxQL主要应用在<code>query</code>节点，其链接方法采用InfluxQL查询字符串，几乎总是SELECT语句。<br>InfluxQL与SQL非常相似，在<code>query</code>节点一般只有三点是必须的：<code>SELECT</code>、<code>FROM</code>、<code>WHERE</code></p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;&lt;FIELD_KEY> | &lt;TAG_KEY> | &lt;FUNCTION>([&lt;FIELD_KEY>|&lt;TAG_KEY])&amp;#125; FROM &lt;DATABASE>.&lt;RETENTION_POLICY>.&lt;MEASUREMENT> WHERE &amp;#123;&lt;CONDITIONAL_EXPRESSION>&amp;#125;</span></code></pre>
+<p>一般查询语句</p>
+<pre class=" language-javascript"><code class="language-javascript">batch
+    <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'SELECT cpu, usage_idle FROM "telegraf"."autogen".cpu WHERE time > now() - 10s'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">httpOut</span><span class="token punctuation">(</span><span class="token string">'dump'</span><span class="token punctuation">)</span></code></pre>
+<p>使用变量的InfluxQL</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> my_field <span class="token operator">=</span> <span class="token string">'usage_idle'</span>
+<span class="token keyword">var</span> my_tag <span class="token operator">=</span> <span class="token string">'cpu'</span>
+
+batch
+    <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'SELECT '</span> <span class="token operator">+</span> my_tag <span class="token operator">+</span> <span class="token string">', '</span> <span class="token operator">+</span> my_field <span class="token operator">+</span> <span class="token string">' FROM "telegraf"."autogen".cpu WHERE time > now() - 10s'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">httpOut</span><span class="token punctuation">(</span><span class="token string">'dump'</span><span class="token punctuation">)</span></code></pre>
+<p>使用函数调用的InfluxQL</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> batch
+  <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token string">'SELECT 100 - mean(usage_idle) AS stat FROM "telegraf"."autogen"."cpu" WHERE cpu = '</span>cpu<span class="token operator">-</span>total<span class="token string">' '</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>period<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>every<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span><span class="token string">'host'</span><span class="token punctuation">)</span></code></pre>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">duTianze</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://dutianze.github.io/2019/09/29/previous/tickscript-syntax/">https://dutianze.github.io/2019/09/29/previous/tickscript-syntax/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">duTianze</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/kapacitor/">
+                                    <span class="chip bg-color">kapacitor</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'cb422a410088a1496669',
+        clientSecret: '4028fd1e417d1da93a4f69f578a5382d79092196',
+        repo: 'dutianze.github.io',
+        owner: 'duTianze',
+        admin: ["duTianze"],
+        id: '2019-09-29T16-00-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2019/10/08/previous/tickscript-batch/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="TICKscript BatchNode">
+                        
+                        <span class="card-title">TICKscript BatchNode</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            批节点batch节点处理子查询节点的创建，每次query调用都会创建一个子批处理节点，可以进一步对其进行配置。批处理任务中的batch变量是BatchNode的一个实例。
+
+使用BatchNode时需要QueryNode。它定义了批处理数据
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/kapacitor/">
+                        <span class="chip bg-color">kapacitor</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/09/27/previous/gitalk/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Cafe Themed Hexo Add Gitalk">
+                        
+                        <span class="card-title">Cafe Themed Hexo Add Gitalk</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Gitalk 介绍Gitalk是一个基于GitHub Issue和Preact开发的评论插件。
+特性
+使用GitHub登录
+支持多语言[en, zh-CN, zh-TW, es-ES, fr, ru]
+支持个人或组织
+无干扰模式(设置dis
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-09-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">duTianze</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/duTianze" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:dutianzer@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1151681132" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1151681132" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

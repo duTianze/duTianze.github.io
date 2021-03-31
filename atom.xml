@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>duTianze</title>
+  
+  
+  <link href="https://dutianze.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dutianze.github.io/"/>
+  <updated>2021-03-31T06:42:16.102Z</updated>
+  <id>https://dutianze.github.io/</id>
+  
+  <author>
+    <name>duTianze</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>learn</title>
+    <link href="https://dutianze.github.io/2021/03/31/like/learn/"/>
+    <id>https://dutianze.github.io/2021/03/31/like/learn/</id>
+    <published>2021-03-31T06:39:35.000Z</published>
+    <updated>2021-03-31T06:42:16.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="like" scheme="https://dutianze.github.io/tags/like/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jupyter notebook</title>
+    <link href="https://dutianze.github.io/2021/03/31/previous/jupyter/"/>
+    <id>https://dutianze.github.io/2021/03/31/previous/jupyter/</id>
+    <published>2021-03-31T06:36:39.872Z</published>
+    <updated>2021-03-31T06:36:39.872Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;h2 id=&quot;Jupyter-Notebook&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook&quot;&gt;&lt;/a&gt;Jupyter Notebook&lt;/h2&gt;&lt;p&gt;Jupyter Notebook是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。&lt;/p&gt;
+&lt;h2 id=&quot;Jupyter-Notebook的主要特点&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook的主要特点&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook的主要特点&quot;&gt;&lt;/a&gt;Jupyter Notebook的主要特点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;编程时具有语法高亮、缩进、tab补全的功能。&lt;/li&gt;
+&lt;li&gt;可直接通过浏览器运行代码，同时在代码块下方展示运行结果。&lt;/li&gt;
+&lt;li&gt;对代码编写说明文档或语句时，支持Markdown语法。</summary>
+    
+    
+    
+    
+    <category term="python" scheme="https://dutianze.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://dutianze.github.io/2021/03/31/previous/hello-world/"/>
+    <id>https://dutianze.github.io/2021/03/31/previous/hello-world/</id>
+    <published>2021-03-31T06:36:39.871Z</published>
+    <updated>2021-03-31T06:36:39.871Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown tutorial</title>
+    <link href="https://dutianze.github.io/2020/01/05/previous/markdown-tutorial/"/>
+    <id>https://dutianze.github.io/2020/01/05/previous/markdown-tutorial/</id>
+    <published>2020-01-05T08:08:27.000Z</published>
+    <updated>2021-03-31T06:36:39.889Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot; class=&quot;headerlink&quot; title=&quot;1 概述&quot;&gt;&lt;/a&gt;1 概述&lt;/h1&gt;&lt;h2 id=&quot;1-1-简介&quot;&gt;&lt;a href=&quot;#1-1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.1 简介&quot;&gt;&lt;/a&gt;1.1 简介&lt;/h2&gt;&lt;p&gt;Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia等网站，如各大博客平台：WordPress、Drupal、简书等。&lt;/p&gt;
+&lt;h2 id=&quot;1-2-Markdown编辑器&quot;&gt;&lt;a href=&quot;#1-2-Markdown编辑器&quot; class=&quot;headerlink&quot; title=&quot;1.2 Markdown编辑器&quot;&gt;&lt;/a&gt;1.2 Markdown编辑器&lt;/h2&gt;&lt;p&gt;推荐使用多平台的&lt;a href=&quot;https://github.com/atom/atom/releases/tag/v1.42.0&quot;&gt;atom&lt;/a&gt;, 同时安装&lt;a href=&quot;https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/&quot;&gt;markdown-preview-enhanced&lt;/a&gt;插件&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="others" scheme="https://dutianze.github.io/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InfluxDB Concepts</title>
+    <link href="https://dutianze.github.io/2019/12/11/previous/influxdb-concepts/"/>
+    <id>https://dutianze.github.io/2019/12/11/previous/influxdb-concepts/</id>
+    <published>2019-12-11T03:07:55.000Z</published>
+    <updated>2021-03-31T06:36:39.871Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;influxdb概念&quot;&gt;&lt;a href=&quot;#influxdb概念&quot; class=&quot;headerlink&quot; title=&quot;influxdb概念&quot;&gt;&lt;/a&gt;influxdb概念&lt;/h1&gt;&lt;h2 id=&quot;InfluxDB关键概念&quot;&gt;&lt;a href=&quot;#InfluxDB关键概念&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB关键概念&quot;&gt;&lt;/a&gt;InfluxDB关键概念&lt;/h2&gt;&lt;h3 id=&quot;例子&quot;&gt;&lt;a href=&quot;#例子&quot; class=&quot;headerlink&quot; title=&quot;例子&quot;&gt;&lt;/a&gt;例子&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;measurement&lt;/strong&gt;:census&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;time&lt;/th&gt;
+&lt;th&gt;butterflies&lt;/th&gt;
+&lt;th&gt;honeybees&lt;/th&gt;
+&lt;th&gt;location&lt;/th&gt;
+&lt;th&gt;scientist&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;2015-08-18T00:00:00Z&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;langstroth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T00:00:00Z&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;perpetua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T00:06:00Z&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;langstroth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T00:06:00Z&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;perpetua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T05:54:00Z&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;langstroth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T06:00:00Z&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;langstroth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T06:06:00Z&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;perpetua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015-08-18T06:12:00Z&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;perpetua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;数据是从2015年8月18日00:00到2015年8月18日6:12，在两个位置（位置1和位置2），两位科学家（langstroth和perpetua）计数的蝴蝶和蜜蜂的数量。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="influxdb" scheme="https://dutianze.github.io/tags/influxdb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InfluxDB Introducing</title>
+    <link href="https://dutianze.github.io/2019/12/09/previous/influxdb/"/>
+    <id>https://dutianze.github.io/2019/12/09/previous/influxdb/</id>
+    <published>2019-12-09T08:00:00.000Z</published>
+    <updated>2021-03-31T06:36:39.872Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;InfluxDB介绍&quot;&gt;&lt;a href=&quot;#InfluxDB介绍&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB介绍&quot;&gt;&lt;/a&gt;InfluxDB介绍&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;8888888           .d888 888                   8888888b.  888888b.
+  888            d88P&amp;quot;  888                   888  &amp;quot;Y88b 888  &amp;quot;88b
+  888            888    888                   888    888 888  .88P
+  888   88888b.  888888 888 888  888 888  888 888    888 8888888K.
+  888   888 &amp;quot;88b 888    888 888  888  Y8bd8P&amp;#39; 888    888 888  &amp;quot;Y88b
+  888   888  888 888    888 888  888   X88K   888    888 888    888
+  888   888  888 888    888 Y88b 888 .d8&amp;quot;&amp;quot;8b. 888  .d88P 888   d88P
+8888888 888  888 888    888  &amp;quot;Y88888 888  888 8888888P&amp;quot;  8888888P&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;安装influxdb&quot;&gt;&lt;a href=&quot;#安装influxdb&quot; class=&quot;headerlink&quot; title=&quot;安装influxdb&quot;&gt;&lt;/a&gt;安装influxdb&lt;/h2&gt;&lt;h3 id=&quot;macOS&quot;&gt;&lt;a href=&quot;#macOS&quot; class=&quot;headerlink&quot; title=&quot;macOS&quot;&gt;&lt;/a&gt;macOS&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;安装
+$ brew update
+$ brew install influxdb
+
+启动服务端
+$ influxd
+
+打开新的命令行，进入CLI
+$ influx&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;docker&quot;&gt;&lt;a href=&quot;#docker&quot; class=&quot;headerlink&quot; title=&quot;docker&quot;&gt;&lt;/a&gt;docker&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;拉取镜像
+$ docker pull influxdb
+
+创建挂载目录
+$ mkdir -p ~/tmp/influxdb
+
+启动容器
+$ docker run -d --rm -p 8086:8086 \
+      --name=influxdb \
+      -v ~/tmp/influxdb:/var/lib/influxdb \
+      influxdb
+
+进入CLI
+$ docker exec -it influxdb influx&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+    <category term="influxdb" scheme="https://dutianze.github.io/tags/influxdb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TICKscript BatchNode</title>
+    <link href="https://dutianze.github.io/2019/10/08/previous/tickscript-batch/"/>
+    <id>https://dutianze.github.io/2019/10/08/previous/tickscript-batch/</id>
+    <published>2019-10-08T09:53:35.000Z</published>
+    <updated>2021-03-31T06:36:39.869Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;批节点&quot;&gt;&lt;a href=&quot;#批节点&quot; class=&quot;headerlink&quot; title=&quot;批节点&quot;&gt;&lt;/a&gt;批节点&lt;/h1&gt;&lt;p&gt;&lt;code&gt;batch&lt;/code&gt;节点处理子查询节点的创建，每次&lt;code&gt;query&lt;/code&gt;调用都会创建一个子批处理节点，可以进一步对其进行配置。批处理任务中的&lt;code&gt;batch&lt;/code&gt;变量是&lt;code&gt;BatchNode&lt;/code&gt;的一个实例。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用&lt;code&gt;BatchNode&lt;/code&gt;时需要&lt;code&gt;QueryNode&lt;/code&gt;。它定义了批处理数据的来源和时间表，并且应在任何其他链接方法之前使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;构造器&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;链方法&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;batch&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;无构造方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;属性方法&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;setter&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;quiet()&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;禁止来自此节点的所有错误记录事件。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    
+    <category term="kapacitor" scheme="https://dutianze.github.io/tags/kapacitor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TICKscript syntax</title>
+    <link href="https://dutianze.github.io/2019/09/29/previous/tickscript-syntax/"/>
+    <id>https://dutianze.github.io/2019/09/29/previous/tickscript-syntax/</id>
+    <published>2019-09-29T08:00:00.000Z</published>
+    <updated>2021-03-31T06:36:39.869Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;p&gt;入门部分介绍了节点和管道的关键概念，节点代表流程调用单位，将数据进行批处理或逐点流处理，然后更改数据、存储数据或基于数据更改触发警报，管道是节点的逻辑组织链。&lt;br&gt;在Kapacitor中，TICKscript用于定义任务和模板任务，这些模板任务可作为生成新任务的模板。&lt;/p&gt;
+&lt;p&gt;TICKscript语法的借鉴了许多不同的语言，最多的是GO。&lt;/p&gt;
+&lt;p&gt;使用TICKscript时，将遇到几个语法子空间&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;InfluxQL&lt;/strong&gt; - 创建查询节点时，需要一个表示InfluxQL语句的字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lambda expressions&lt;/strong&gt; - 其他节点和方法使用Lambda表达式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如入门中所述，管道是有向无环图，它包含有限数量的节点和边。每个边从一个节点指向另一个节点，通常从数据源节点开始，到数据集节点，再将其结果传递到数据处理节点。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="kapacitor" scheme="https://dutianze.github.io/tags/kapacitor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cafe Themed Hexo Add Gitalk</title>
+    <link href="https://dutianze.github.io/2019/09/27/previous/gitalk/"/>
+    <id>https://dutianze.github.io/2019/09/27/previous/gitalk/</id>
+    <published>2019-09-27T12:15:00.000Z</published>
+    <updated>2021-03-31T06:36:39.871Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Gitalk-介绍&quot;&gt;&lt;a href=&quot;#Gitalk-介绍&quot; class=&quot;headerlink&quot; title=&quot;Gitalk 介绍&quot;&gt;&lt;/a&gt;Gitalk 介绍&lt;/h2&gt;&lt;p&gt;Gitalk是一个基于GitHub Issue和Preact开发的评论插件。&lt;/p&gt;
+&lt;h3 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;使用GitHub登录&lt;/li&gt;
+&lt;li&gt;支持多语言[en, zh-CN, zh-TW, es-ES, fr, ru]&lt;/li&gt;
+&lt;li&gt;支持个人或组织&lt;/li&gt;
+&lt;li&gt;无干扰模式(设置distractionFreeMode为 true 开启)&lt;/li&gt;
+&lt;li&gt;快捷键提交评论(cmd|ctrl + enter)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;创建-OAuth-Application&quot;&gt;&lt;a href=&quot;#创建-OAuth-Application&quot; class=&quot;headerlink&quot; title=&quot;创建 OAuth Application&quot;&gt;&lt;/a&gt;创建 OAuth Application&lt;/h2&gt;&lt;p&gt;打开&lt;a href=&quot;https://github.com/settings/developers&quot;&gt;这个链接&lt;/a&gt;，点击New OAuth App，填入以下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Application name&lt;/code&gt;：应用名称，可以随便填&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Homepage URL&lt;/code&gt;：主页 URL，一般填你的博客地址&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Application description&lt;/code&gt;：应用描述，选填&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Authorization callback UR&lt;/code&gt;L：授权回调地址，必须填你的博客地址&lt;br&gt;接着你就可以得到 &lt;code&gt;Client ID&lt;/code&gt; 和 &lt;code&gt;Client Secret&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;新建-github-仓库保存评论&quot;&gt;&lt;a href=&quot;#新建-github-仓库保存评论&quot; class=&quot;headerlink&quot; title=&quot;新建 github 仓库保存评论&quot;&gt;&lt;/a&gt;新建 github 仓库保存评论&lt;/h2&gt;&lt;p&gt;gitalk评论采用的是github仓库issues的方式，所以你需要将它与你的仓库联系起来。建议新建一个仓库，专门用于保存评论。&lt;br&gt;但是我的直接用的是blog仓库 dutianze.github.io。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://dutianze.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TICKscript Introducing</title>
+    <link href="https://dutianze.github.io/2019/09/27/previous/tickscript/"/>
+    <id>https://dutianze.github.io/2019/09/27/previous/tickscript/</id>
+    <published>2019-09-27T06:20:00.000Z</published>
+    <updated>2021-03-31T06:36:39.870Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;TICKscript入门&quot;&gt;&lt;a href=&quot;#TICKscript入门&quot; class=&quot;headerlink&quot; title=&quot;TICKscript入门&quot;&gt;&lt;/a&gt;TICKscript入门&lt;/h1&gt;&lt;h2 id=&quot;介绍TICKscript语言&quot;&gt;&lt;a href=&quot;#介绍TICKscript语言&quot; class=&quot;headerlink&quot; title=&quot;介绍TICKscript语言&quot;&gt;&lt;/a&gt;介绍TICKscript语言&lt;/h2&gt;&lt;p&gt;Kapacitor使用名为&lt;strong&gt;TICKscript&lt;/strong&gt;的领域特定语言（DSL）来定义&lt;strong&gt;任务(tasks)**，这些任务涉及数据的提取，转换和加载，此外还涉及跟踪任意更改和检测数据中的事件。&lt;br&gt;一项常见任务是定义警报，TICKscript使用&lt;code&gt;.tick&lt;/code&gt;文件来定义用于处理数据的&lt;/strong&gt;管道(pipelines)&lt;strong&gt;。TICKscript语言旨在将 **节点(node)&lt;/strong&gt; 中定义的数据处理操作的调用链接在一起。&lt;/p&gt;
+&lt;p&gt;每个脚本都有一个固定范围，并且该范围中的每个变量都可以引用文字值(例如字符串，整数或浮点值)，或者node实例的可以被调用的方法。&lt;/p&gt;
+&lt;p&gt;node有两种形式的方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;属性方法(Property methods)&lt;/strong&gt; 修改node的内部属性，并且返回此节点的引用，用点&lt;code&gt;.&lt;/code&gt;来表明这是属性方法&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;链方法(Chaining methods)&lt;/strong&gt; 创建新的**子节点(child node)**，返回该子节点的引用，用管&lt;code&gt;|&lt;/code&gt;来表明这是属性方法</summary>
+    
+    
+    
+    
+    <category term="kapacitor" scheme="https://dutianze.github.io/tags/kapacitor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kapacitor api</title>
+    <link href="https://dutianze.github.io/2019/09/26/previous/api-kapacitor/"/>
+    <id>https://dutianze.github.io/2019/09/26/previous/api-kapacitor/</id>
+    <published>2019-09-26T07:54:00.000Z</published>
+    <updated>2021-03-31T06:36:39.870Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;定义任务&quot;&gt;&lt;a href=&quot;#定义任务&quot; class=&quot;headerlink&quot; title=&quot;定义任务&quot;&gt;&lt;/a&gt;定义任务&lt;/h2&gt;&lt;h3 id=&quot;创建&quot;&gt;&lt;a href=&quot;#创建&quot; class=&quot;headerlink&quot; title=&quot;创建&quot;&gt;&lt;/a&gt;创建&lt;/h3&gt;&lt;p&gt;&lt;code&gt;id&lt;/code&gt; : &lt;code&gt;dutianze-t&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;http&quot;&gt;POST /kapacitor/v1/tasks
+&amp;#123;
+    &amp;quot;id&amp;quot; : &amp;quot;dutianze-t&amp;quot;,
+    &amp;quot;type&amp;quot; : &amp;quot;stream&amp;quot;,
+    &amp;quot;dbrps&amp;quot; : [&amp;#123;&amp;quot;db&amp;quot;: &amp;quot;api&amp;quot;, &amp;quot;rp&amp;quot; : &amp;quot;autogen&amp;quot;&amp;#125;],
+    &amp;quot;script&amp;quot; : &amp;quot;var db = &amp;#39;api&amp;#39;\n\nvar rp = &amp;#39;autogen&amp;#39;\n\nvar measurement = &amp;#39;account_login&amp;#39;\n\nvar groupBy = [&amp;#39;third_type&amp;#39;]\n\nvar whereFilter = lambda: TRUE\n\nvar name = &amp;#39;dutianze-t&amp;#39;\n\nvar idVar = name + &amp;#39;-&amp;#123;&amp;#123;.Group&amp;#125;&amp;#125;&amp;#39;\n\nvar message = &amp;#39;&amp;#39;\n\nvar idTag = &amp;#39;alertID&amp;#39;\n\nvar levelTag = &amp;#39;level&amp;#39;\n\nvar messageField = &amp;#39;message&amp;#39;\n\nvar durationField = &amp;#39;duration&amp;#39;\n\nvar outputDB = &amp;#39;chronograf&amp;#39;\n\nvar outputRP = &amp;#39;autogen&amp;#39;\n\nvar outputMeasurement = &amp;#39;alerts&amp;#39;\n\nvar triggerType = &amp;#39;relative&amp;#39;\n\nvar shift = 10m\n\nvar crit = 10\n\nvar data = stream\n    |from()\n        .database(db)\n        .retentionPolicy(rp)\n        .measurement(measurement)\n        .groupBy(groupBy)\n        .where(whereFilter)\n    |eval(lambda: \&amp;quot;value\&amp;quot;)\n        .as(&amp;#39;value&amp;#39;)\n\nvar past = data\n    |shift(shift)\n\nvar current = data\n\nvar trigger = past\n    |join(current)\n        .as(&amp;#39;past&amp;#39;, &amp;#39;current&amp;#39;)\n    |eval(lambda: abs(float(\&amp;quot;current.value\&amp;quot; - \&amp;quot;past.value\&amp;quot;)) / float(\&amp;quot;past.value\&amp;quot;) * 100.0)\n        .keep()\n        .as(&amp;#39;value&amp;#39;)\n    |alert()\n        .crit(lambda: \&amp;quot;value\&amp;quot; &amp;gt; crit)\n        .stateChangesOnly()\n        .message(message)\n        .id(idVar)\n        .idTag(idTag)\n        .levelTag(levelTag)\n        .messageField(messageField)\n        .durationField(durationField)\n\ntrigger\n    |eval(lambda: float(\&amp;quot;value\&amp;quot;))\n        .as(&amp;#39;value&amp;#39;)\n        .keep()\n    |influxDBOut()\n        .create()\n        .database(outputDB)\n        .retentionPolicy(outputRP)\n        .measurement(outputMeasurement)\n        .tag(&amp;#39;alertName&amp;#39;, name)\n        .tag(&amp;#39;triggerType&amp;#39;, triggerType)\n\ntrigger\n    |httpOut(&amp;#39;output&amp;#39;)\n&amp;quot;,
+    &amp;quot;status&amp;quot; : &amp;quot;enabled&amp;quot;
+&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;http&quot;&gt;&amp;#123;
+    &amp;quot;link&amp;quot;: &amp;#123;
+        &amp;quot;rel&amp;quot;: &amp;quot;self&amp;quot;,
+        &amp;quot;href&amp;quot;: &amp;quot;/kapacitor/v1/tasks/dutianze-t&amp;quot;
+    &amp;#125;,
+    &amp;quot;id&amp;quot;: &amp;quot;dutianze-t&amp;quot;,
+    &amp;quot;template-id&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;type&amp;quot;: &amp;quot;stream&amp;quot;,
+    &amp;quot;dbrps&amp;quot;: [
+        &amp;#123;
+            &amp;quot;db&amp;quot;: &amp;quot;api&amp;quot;,
+            &amp;quot;rp&amp;quot;: &amp;quot;autogen&amp;quot;
+        &amp;#125;
+    ],
+    &amp;quot;script&amp;quot;: &amp;quot;var db = &amp;#39;api&amp;#39;\n\nvar rp = &amp;#39;autogen&amp;#39;\n\nvar measurement = &amp;#39;account_login&amp;#39;\n\nvar groupBy = [&amp;#39;third_type&amp;#39;]\n\nvar whereFilter = lambda: TRUE\n\nvar name = &amp;#39;dutianze-t&amp;#39;\n\nvar idVar = name + &amp;#39;-&amp;#123;&amp;#123;.Group&amp;#125;&amp;#125;&amp;#39;\n\nvar message = &amp;#39;&amp;#39;\n\nvar idTag = &amp;#39;alertID&amp;#39;\n\nvar levelTag = &amp;#39;level&amp;#39;\n\nvar messageField = &amp;#39;message&amp;#39;\n\nvar durationField = &amp;#39;duration&amp;#39;\n\nvar outputDB = &amp;#39;chronograf&amp;#39;\n\nvar outputRP = &amp;#39;autogen&amp;#39;\n\nvar outputMeasurement = &amp;#39;alerts&amp;#39;\n\nvar triggerType = &amp;#39;relative&amp;#39;\n\nvar shift = 10m\n\nvar crit = 10\n\nvar data = stream\n    |from()\n        .database(db)\n        .retentionPolicy(rp)\n        .measurement(measurement)\n        .groupBy(groupBy)\n        .where(whereFilter)\n    |eval(lambda: \&amp;quot;value\&amp;quot;)\n        .as(&amp;#39;value&amp;#39;)\n\nvar past = data\n    |shift(shift)\n\nvar current = data\n\nvar trigger = past\n    |join(current)\n        .as(&amp;#39;past&amp;#39;, &amp;#39;current&amp;#39;)\n    |eval(lambda: abs(float(\&amp;quot;current.value\&amp;quot; - \&amp;quot;past.value\&amp;quot;)) / float(\&amp;quot;past.value\&amp;quot;) * 100.0)\n        .keep()\n        .as(&amp;#39;value&amp;#39;)\n    |alert()\n        .crit(lambda: \&amp;quot;value\&amp;quot; &amp;gt; crit)\n        .stateChangesOnly()\n        .message(message)\n        .id(idVar)\n        .idTag(idTag)\n        .levelTag(levelTag)\n        .messageField(messageField)\n        .durationField(durationField)\n\ntrigger\n    |eval(lambda: float(\&amp;quot;value\&amp;quot;))\n        .as(&amp;#39;value&amp;#39;)\n        .keep()\n    |influxDBOut()\n        .create()\n        .database(outputDB)\n        .retentionPolicy(outputRP)\n        .measurement(outputMeasurement)\n        .tag(&amp;#39;alertName&amp;#39;, name)\n        .tag(&amp;#39;triggerType&amp;#39;, triggerType)\n\ntrigger\n    |httpOut(&amp;#39;output&amp;#39;)\n&amp;quot;,
+    &amp;quot;vars&amp;quot;: &amp;#123;&amp;#125;,
+    &amp;quot;dot&amp;quot;: &amp;quot;digraph dutianze-t &amp;#123;\ngraph [throughput=\&amp;quot;0.00 points/s\&amp;quot;];\n\nstream0 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\nstream0 -&amp;gt; from1 [processed=\&amp;quot;0\&amp;quot;];\n\nfrom1 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\nfrom1 -&amp;gt; eval2 [processed=\&amp;quot;0\&amp;quot;];\n\neval2 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\neval2 -&amp;gt; shift3 [processed=\&amp;quot;0\&amp;quot;];\neval2 -&amp;gt; join5 [processed=\&amp;quot;0\&amp;quot;];\n\nshift3 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\nshift3 -&amp;gt; join5 [processed=\&amp;quot;0\&amp;quot;];\n\njoin5 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\njoin5 -&amp;gt; eval6 [processed=\&amp;quot;0\&amp;quot;];\n\neval6 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\neval6 -&amp;gt; alert7 [processed=\&amp;quot;0\&amp;quot;];\n\nalert7 [alerts_inhibited=\&amp;quot;0\&amp;quot; alerts_triggered=\&amp;quot;0\&amp;quot; avg_exec_time_ns=\&amp;quot;0s\&amp;quot; crits_triggered=\&amp;quot;0\&amp;quot; errors=\&amp;quot;0\&amp;quot; infos_triggered=\&amp;quot;0\&amp;quot; oks_triggered=\&amp;quot;0\&amp;quot; warns_triggered=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\nalert7 -&amp;gt; http_out10 [processed=\&amp;quot;0\&amp;quot;];\nalert7 -&amp;gt; eval8 [processed=\&amp;quot;0\&amp;quot;];\n\nhttp_out10 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\n\neval8 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; ];\neval8 -&amp;gt; influxdb_out9 [processed=\&amp;quot;0\&amp;quot;];\n\ninfluxdb_out9 [avg_exec_time_ns=\&amp;quot;0s\&amp;quot; errors=\&amp;quot;0\&amp;quot; points_written=\&amp;quot;0\&amp;quot; working_cardinality=\&amp;quot;0\&amp;quot; write_errors=\&amp;quot;0\&amp;quot; ];\n&amp;#125;&amp;quot;,
+    &amp;quot;status&amp;quot;: &amp;quot;enabled&amp;quot;,
+    &amp;quot;executing&amp;quot;: true,
+    &amp;quot;error&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;stats&amp;quot;: &amp;#123;&amp;#125;,
+    &amp;quot;created&amp;quot;: &amp;quot;2019-09-26T15:46:19.40868194+08:00&amp;quot;,
+    &amp;quot;modified&amp;quot;: &amp;quot;2019-09-26T15:46:19.40868194+08:00&amp;quot;,
+    &amp;quot;last-enabled&amp;quot;: &amp;quot;2019-09-26T15:46:19.40868194+08:00&amp;quot;
+&amp;#125;&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+    <category term="kapacitor" scheme="https://dutianze.github.io/tags/kapacitor/"/>
+    
+  </entry>
+  
+</feed>
