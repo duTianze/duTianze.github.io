@@ -1,12 +1,11 @@
 ---
-title: learn-plan
-date: 2021-03-23 11:53:37
-tags: plan
+title: learn
+date: 2021-03-31 14:39:35
+tags: like
 ---
 
 ## java
 1. [JDK16](https://docs.oracle.com/en/java/javase/16/index.html)
-2. [netty5中文翻译](http://ifeve.com/netty5-user-guide/)
 
 ## react
 1. [https://developedbyed.com](https://developedbyed.com)
@@ -14,7 +13,7 @@ tags: plan
 2. [全栈公开课2021](https://fullstackopen.com/zh/)
 
 ## 公开课
-1. [CMU数据库15-445/645中文翻译版](https://www.bilibili.com/video/BV1f7411z7dw?from=search&seid=3190408652216344616)
+1. [awesome-courses](https://github.com/prakhar1989/awesome-courses)
 2. [CMU 15-445 simtoco ](https://www.simtoco.com/#/albums/video?id=1000122)
 3. [awesome-cs-courses-zh](https://github.com/apachecn/awesome-cs-courses-zh)
 
@@ -33,3 +32,6 @@ tags: plan
 
 ## 日语
 [标日初级精讲](https://www.bilibili.com/video/av3060477)
+
+## 音乐合集
+[jojo](https://open.spotify.com/playlist/37i9dQZF1DX7gGgYckDfuN)
