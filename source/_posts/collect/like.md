@@ -21,7 +21,7 @@ tags: collect
 5. [现代 JavaScript 教程中文版](https://github.com/javascript-tutorial/zh.javascript.info)
 
 ## 公开课
-1. [数据库 CMU 15-445 simtoco ](https://www.simtoco.com/#/albums/video?id=1000122)
+1. [CMU 15-445](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
 2. [awesome-courses](https://github.com/prakhar1989/awesome-courses)
 3. [awesome-cs-courses-zh](https://github.com/apachecn/awesome-cs-courses-zh)
 
