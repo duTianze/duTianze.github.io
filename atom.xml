@@ -6,7 +6,7 @@
   <link href="https://dutianze.github.io/atom.xml" rel="self"/>
   
   <link href="https://dutianze.github.io/"/>
-  <updated>2022-02-19T13:25:47.708Z</updated>
+  <updated>2022-02-19T13:25:47.707Z</updated>
   <id>https://dutianze.github.io/</id>
   
   <author>
@@ -15,48 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>jupyter notebook</title>
-    <link href="https://dutianze.github.io/2022/02/19/previous/jupyter/"/>
-    <id>https://dutianze.github.io/2022/02/19/previous/jupyter/</id>
-    <published>2022-02-19T13:25:47.708Z</published>
-    <updated>2022-02-19T13:25:47.708Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;h2 id=&quot;Jupyter-Notebook&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook&quot;&gt;&lt;/a&gt;Jupyter Notebook&lt;/h2&gt;&lt;p&gt;Jupyter Notebook是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。&lt;/p&gt;
-&lt;h2 id=&quot;Jupyter-Notebook的主要特点&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook的主要特点&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook的主要特点&quot;&gt;&lt;/a&gt;Jupyter Notebook的主要特点&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;编程时具有语法高亮、缩进、tab补全的功能。&lt;/li&gt;
-&lt;li&gt;可直接通过浏览器运行代码，同时在代码块下方展示运行结果。&lt;/li&gt;
-&lt;li&gt;对代码编写说明文档或语句时，支持Markdown语法。</summary>
-    
-    
-    
-    
-    <category term="python" scheme="https://dutianze.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://dutianze.github.io/2022/02/19/previous/hello-world/"/>
-    <id>https://dutianze.github.io/2022/02/19/previous/hello-world/</id>
-    <published>2022-02-19T13:25:47.707Z</published>
-    <updated>2022-02-19T13:25:47.708Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>第七课 李さんは毎日コーヒーを飲みます</title>
@@ -102,6 +60,27 @@
     
     
     <category term="collect" scheme="https://dutianze.github.io/tags/collect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jupyter notebook</title>
+    <link href="https://dutianze.github.io/2020/10/24/previous/jupyter/"/>
+    <id>https://dutianze.github.io/2020/10/24/previous/jupyter/</id>
+    <published>2020-10-24T07:13:10.000Z</published>
+    <updated>2022-02-19T13:34:57.345Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;h2 id=&quot;Jupyter-Notebook&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook&quot;&gt;&lt;/a&gt;Jupyter Notebook&lt;/h2&gt;&lt;p&gt;Jupyter Notebook 是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。&lt;/p&gt;
+&lt;h2 id=&quot;Jupyter-Notebook-的主要特点&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook-的主要特点&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook 的主要特点&quot;&gt;&lt;/a&gt;Jupyter Notebook 的主要特点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;编程时具有语法高亮、缩进、tab 补全的功能。&lt;/li&gt;
+&lt;li&gt;可直接通过浏览器运行代码，同时在代码块下方展示运行结果。&lt;/li&gt;
+&lt;li&gt;对代码编写说明文档或语句时，支持 Markdown 语法。</summary>
+    
+    
+    
+    
+    <category term="python" scheme="https://dutianze.github.io/tags/python/"/>
     
   </entry>
   

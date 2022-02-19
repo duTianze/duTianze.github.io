@@ -4,38 +4,6 @@
   
     
     <entry>
-      <title>jupyter notebook</title>
-      <link href="/2022/02/19/previous/jupyter/"/>
-      <url>/2022/02/19/previous/jupyter/</url>
-      
-        <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a>Jupyter Notebook</h2><p>Jupyter Notebook是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。</p><h2 id="Jupyter-Notebook的主要特点"><a href="#Jupyter-Notebook的主要特点" class="headerlink" title="Jupyter Notebook的主要特点"></a>Jupyter Notebook的主要特点</h2><ol><li>编程时具有语法高亮、缩进、tab补全的功能。</li><li>可直接通过浏览器运行代码，同时在代码块下方展示运行结果。</li><li>对代码编写说明文档或语句时，支持Markdown语法。<span id="more"></span><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1></li></ol><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">pip3 install jupyter</code></pre><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">jupyter notebook</code></pre><p>命令行状态<br><img src="start.png?200x"></p><p>浏览器自动跳转之后的状态<br><img src="view.png"></p><ul><li>注意：之后在网页jupyter的所有操作，都请保持终端不要关闭，因为一旦关闭终端，就会断开与本地服务器的链接，你将无法在Jupyter Notebook中进行其他操作啦.</li></ul><h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><p>有时候默认的位置并不方便你操作，你可以修改启动时，jupyter使用的本地地址<br>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">jupyter notebook --generate-config</code></pre><p>输入这个命令之后会告诉你产生了一个<code>jupyter_notebook_config.py</code>的文件.</p><p><img src="config.png"></p><p>按照提示的地址找到这个文件使用 <em>notepad++</em> 打开文件，然后搜索 <em>notebook_dir</em> , 修改为你要使用的地址。重新打开jupyter，网页就是新的地址了</p><p><img src="config_dir.png"></p><ul><li>然后呢，你可以把从其他地方下载的jupyter文件放到这个目录下面，然后可以方便的打开运行啦</li></ul><p>本地</p><p><img src="1.png"></p><p>jupyter</p><p><img src="2.png"></p><h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><p>jupyter用来记笔记 单元格-&gt;单元格类型-&gt;标签<br><img src="kind.png"></p><p>点击运行<br><img src="pre.png"></p><p>可以看到标签的输出结果<br><img src="after.png"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/02/19/previous/hello-world/"/>
-      <url>/2022/02/19/previous/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>第七课 李さんは毎日コーヒーを飲みます</title>
       <link href="/2022/02/17/japan/japaneselesson7/"/>
       <url>/2022/02/17/japan/japaneselesson7/</url>
@@ -66,6 +34,25 @@
         <tags>
             
             <tag> collect </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jupyter notebook</title>
+      <link href="/2020/10/24/previous/jupyter/"/>
+      <url>/2020/10/24/previous/jupyter/</url>
+      
+        <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a>Jupyter Notebook</h2><p>Jupyter Notebook 是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。</p><h2 id="Jupyter-Notebook-的主要特点"><a href="#Jupyter-Notebook-的主要特点" class="headerlink" title="Jupyter Notebook 的主要特点"></a>Jupyter Notebook 的主要特点</h2><ol><li>编程时具有语法高亮、缩进、tab 补全的功能。</li><li>可直接通过浏览器运行代码，同时在代码块下方展示运行结果。</li><li>对代码编写说明文档或语句时，支持 Markdown 语法。<span id="more"></span></li></ol><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">pip3 install jupyter</code></pre><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">jupyter notebook</code></pre><p>命令行状态<br><img src="start.png?200x"></p><p>浏览器自动跳转之后的状态<br><img src="view.png"></p><ul><li>注意：之后在网页 jupyter 的所有操作，都请保持终端不要关闭，因为一旦关闭终端，就会断开与本地服务器的链接，你将无法在 Jupyter Notebook 中进行其他操作啦.</li></ul><h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><p>有时候默认的位置并不方便你操作，你可以修改启动时，jupyter 使用的本地地址<br>打开命令行输入</p><pre class=" language-shell"><code class="language-shell">jupyter notebook --generate-config</code></pre><p>输入这个命令之后会告诉你产生了一个<code>jupyter_notebook_config.py</code>的文件.</p><p><img src="config.png"></p><p>按照提示的地址找到这个文件使用 <em>notepad++</em> 打开文件，然后搜索 <em>notebook_dir</em> , 修改为你要使用的地址。重新打开 jupyter，网页就是新的地址了</p><p><img src="config_dir.png"></p><ul><li>然后呢，你可以把从其他地方下载的 jupyter 文件放到这个目录下面，然后可以方便的打开运行啦</li></ul><p>本地</p><p><img src="1.png"></p><p>jupyter</p><p><img src="2.png"></p><h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><p>jupyter 用来记笔记 单元格-&gt;单元格类型-&gt;标签<br><img src="kind.png"></p><p>点击运行<br><img src="pre.png"></p><p>可以看到标签的输出结果<br><img src="after.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
             
         </tags>
       
