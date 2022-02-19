@@ -1,0 +1,1235 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Markdown tutorial, duTianze">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Markdown tutorial | duTianze</title>
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="duTianze" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/logo.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">duTianze</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/logo.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">duTianze</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Markdown tutorial</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/others/">
+                                <span class="chip bg-color">others</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-01-05
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    5 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>[TOC]</p>
+<blockquote>
+<p>Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</p>
+</blockquote>
+<h1 id="1-概述"><a href="#1-概述" class="headerlink" title="1 概述"></a>1 概述</h1><h2 id="1-1-简介"><a href="#1-1-简介" class="headerlink" title="1.1 简介"></a>1.1 简介</h2><p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia等网站，如各大博客平台：WordPress、Drupal、简书等。</p>
+<h2 id="1-2-Markdown编辑器"><a href="#1-2-Markdown编辑器" class="headerlink" title="1.2 Markdown编辑器"></a>1.2 Markdown编辑器</h2><p>推荐使用多平台的<a target="_blank" rel="noopener" href="https://github.com/atom/atom/releases/tag/v1.42.0">atom</a>, 同时安装<a target="_blank" rel="noopener" href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">markdown-preview-enhanced</a>插件</p>
+<span id="more"></span>
+<h1 id="2、基本语法"><a href="#2、基本语法" class="headerlink" title="2、基本语法"></a>2、基本语法</h1><h2 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 这是 &lt;h1> 一级标题</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是 &lt;h2> 二级标题</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 这是 &lt;h3> 三级标题</span>
+
+<span class="token title important"><span class="token punctuation">####</span> 这是 &lt;h4> 四级标题</span>
+
+<span class="token title important"><span class="token punctuation">#####</span> 这是 &lt;h5> 五级标题</span>
+
+<span class="token title important"><span class="token punctuation">######</span> 这是 &lt;h6> 六级标题</span>
+</code></pre>
+<h2 id="2-2-强调"><a href="#2-2-强调" class="headerlink" title="2.2 强调"></a>2.2 强调</h2><ul>
+<li><em>斜体</em><br>&#96;&#96;&#96;markdown</li>
+</ul>
+<p><em>斜体</em><br><em>斜体</em></p>
+<pre><code>
+* **粗体**
+```markdown
+**粗体**
+__粗体__
+</code></pre>
+<ul>
+<li><del>横线删除</del><pre class=" language-markdown"><code class="language-markdown">~~横线删除~~
+</code></pre>
+<h2 id="2-3-段落和换行"><a href="#2-3-段落和换行" class="headerlink" title="2.3 段落和换行"></a>2.3 段落和换行</h2></li>
+<li>两个回车<br>&#96;&#96;&#96;markdown<br>这是第一段</li>
+</ul>
+<p>这是第二段</p>
+<pre><code>* 一段结尾加两个空格+回车
+```markdown
+这是第一段
+这是第二段
+</code></pre>
+<ul>
+<li>使用HTML的语法<code>&lt;br&gt;</code>作为换行</li>
+</ul>
+<h2 id="2-4-分割线"><a href="#2-4-分割线" class="headerlink" title="2.4 分割线"></a>2.4 分割线</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token hr punctuation">---</span>
+<span class="token hr punctuation">***</span>
+<span class="token italic"><span class="token punctuation">_</span><span class="token punctuation">_</span><span class="token punctuation">_</span></span>
+</code></pre>
+<hr>
+<hr>
+<h2 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 可以只用一个 “>” 号来写一个多行的引用，
+
+<span class="token blockquote punctuation">></span> 也可以每一行都用一个 “>” 号
+<span class="token blockquote punctuation">></span> 与上面一个效果
+
+<span class="token blockquote punctuation">> ></span> 还可以是嵌套引用，用多个“>”
+</code></pre>
+<h2 id="2-6-列表"><a href="#2-6-列表" class="headerlink" title="2.6 列表"></a>2.6 列表</h2><h3 id="2-6-1-无序列表"><a href="#2-6-1-无序列表" class="headerlink" title="2.6.1 无序列表"></a>2.6.1 无序列表</h3><p>无序列表可以在每行开头用 <code>*</code>、<code>+</code>、<code>-</code>来表示，也可以三者混合一起，推荐使用相同的字符，避免混乱。</p>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token list punctuation">-</span> Item 1
+<span class="token list punctuation">-</span> Item 2
+  <span class="token list punctuation">-</span> Item 2a
+  <span class="token list punctuation">-</span> Item 2b
+</code></pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2<ul>
+<li>Item 2a</li>
+<li>Item 2b<ul>
+<li>a<h3 id="2-6-2-有序列表"><a href="#2-6-2-有序列表" class="headerlink" title="2.6.2 有序列表"></a>2.6.2 有序列表</h3>有序列表用数字接着一个英文句点来表示，数字可无序，但还是推荐使用1.、2.，避免混乱。<br>&#96;&#96;&#96;markdown</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3<ol>
+<li>Item 3a</li>
+<li>Item 3b<br>&#96;&#96;&#96;</li>
+</ol>
+</li>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3<ol>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-7-代码"><a href="#2-7-代码" class="headerlink" title="2.7 代码"></a>2.7 代码</h2><h3 id="2-7-1-行内代码块"><a href="#2-7-1-行内代码块" class="headerlink" title="2.7.1 行内代码块"></a>2.7.1 行内代码块</h3><p>这是一个代码<code>code</code> <code>aaa</code></p>
+<h3 id="2-7-2-段落代码块"><a href="#2-7-2-段落代码块" class="headerlink" title="2.7.2 段落代码块"></a>2.7.2 段落代码块</h3><p>使用 ``` 来表示代码块。</p>
+<p>```java<br>public static void main(String[] args) {<br>    System.out.println(“hello world”);<br>}<br>```</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="2-8-链接"><a href="#2-8-链接" class="headerlink" title="2.8 链接"></a>2.8 链接</h2><ul>
+<li>行内式<pre><code>[GitHub](http://github.com)
+</code></pre>
+<a target="_blank" rel="noopener" href="http://github.com/">GitHub</a></li>
+</ul>
+<pre><code>[GitHub][1]
+
+* 参考式
+[1]: http://github.com
+</code></pre>
+<p><a target="_blank" rel="noopener" href="http://github.com/">GitHub</a></p>
+<h2 id="2-9-图片"><a href="#2-9-图片" class="headerlink" title="2.9 图片"></a>2.9 图片</h2><pre><code>![markdown](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7GF1Wck-YFz4mvUh-gdmXKpBPvI2Bc8bfVC_iodKqpA-93m9&amp;s)
+</code></pre>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7GF1Wck-YFz4mvUh-gdmXKpBPvI2Bc8bfVC_iodKqpA-93m9&s" alt="markdown"></p>
+<h2 id="2-10-表格"><a href="#2-10-表格" class="headerlink" title="2.10 表格"></a>2.10 表格</h2><ul>
+<li>表格最简单的写法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>score</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>001</td>
+<td>Mark</td>
+<td>90</td>
+</tr>
+<tr>
+<td>002</td>
+<td>Ford</td>
+<td>80</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Alan</td>
+<td>95</td>
+</tr>
+</tbody></table>
+<pre><code>id    |   name   |   score
+---   |   ---    |   ---
+001   |   Mark   |   90
+002   |   Ford   |   80
+003   |   Alan   |   95
+</code></pre>
+<ul>
+<li>用<code>:</code>对齐，<code>:</code>写在在<code>---</code>的左边就是左对齐，右边就是右对齐，两边都写就是居中。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">long_long_id</th>
+<th align="center">long_long_name</th>
+<th align="right">long_long_score</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">001</td>
+<td align="center">Mark</td>
+<td align="right">90</td>
+</tr>
+<tr>
+<td align="center">002</td>
+<td align="center">Ford</td>
+<td align="right">80</td>
+</tr>
+<tr>
+<td align="center">003</td>
+<td align="center">Alan</td>
+<td align="right">95</td>
+</tr>
+</tbody></table>
+<pre><code>|long_long_id|long_long_name|long_long_score|
+|    ---     |    :---:     |     ---:      |
+|    001     |     Mark     |      90       |
+|    002     |     Ford     |      80       |
+|    003     |     Alan     |      95       |
+</code></pre>
+<h1 id="3-拓展的语法"><a href="#3-拓展的语法" class="headerlink" title="3 拓展的语法"></a>3 拓展的语法</h1><h2 id="3-1-目录"><a href="#3-1-目录" class="headerlink" title="3.1 目录"></a>3.1 目录</h2><p>添加<code>[TOC]</code></p>
+<h2 id="3-2-脚注"><a href="#3-2-脚注" class="headerlink" title="3.2 脚注"></a>3.2 脚注</h2><pre><code>Content [^1]
+
+[^1]: Hi! This is a footnote
+</code></pre>
+<p>Content [^1]</p>
+<p>[^1]: Hi! This is a footnote</p>
+<h2 id="3-3-上标"><a href="#3-3-上标" class="headerlink" title="3.3 上标"></a>3.3 上标</h2><p>30^th^  a^b^</p>
+<h2 id="3-4-下标"><a href="#3-4-下标" class="headerlink" title="3.4 下标"></a>3.4 下标</h2><p>30<del>th</del>  a<del>b</del></p>
+<h2 id="3-5-标记"><a href="#3-5-标记" class="headerlink" title="3.5 标记"></a>3.5 标记</h2><p>&#x3D;&#x3D;marked&#x3D;&#x3D;</p>
+<h1 id="4、数学"><a href="#4、数学" class="headerlink" title="4、数学"></a>4、数学</h1><p><a target="_blank" rel="noopener" href="https://katex.org/docs/supported.html">语法参考katex</a></p>
+<pre><code>$f(x) = sin(x)$
+
+$$\sum_&#123;n=1&#125;^&#123;100&#125; &#123;n + 1&#125;$$
+
+$$\overrightarrow&#123;AB&#125;$$
+</code></pre>
+<p>$f(x) &#x3D; sin(x)$</p>
+<p>$$\sum_{n&#x3D;1}^{100} {n + 1}$$</p>
+<p>$$\overrightarrow{AB}$$</p>
+<h1 id="5、图像"><a href="#5、图像" class="headerlink" title="5、图像"></a>5、图像</h1><p>atom插件<code>markdown-preview-enhanced</code>支持<a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid/#/flowchart">mermaid</a></p>
+<h2 id="4-1流程图"><a href="#4-1流程图" class="headerlink" title="4.1流程图"></a>4.1流程图</h2><h3 id="4-1-1-语法"><a href="#4-1-1-语法" class="headerlink" title="4.1.1 语法"></a>4.1.1 语法</h3><p>```mermaid<br>graph TD<br>a –&gt; b<br>a –&gt; c<br>```</p>
+<blockquote>
+<p>注意 以下省略 &#96;&#96;&#96;mermaid</p>
+</blockquote>
+<ul>
+<li><p>方向</p>
+<ul>
+<li><p>TB - top bottom</p>
+</li>
+<li><p>BT - bottom  top</p>
+</li>
+<li><p>RL - right left</p>
+</li>
+<li><p>LR - left right</p>
+</li>
+<li><p>TD - top down</p>
+</li>
+</ul>
+</li>
+<li><p>线段<br>&#96;&#96;&#96;<br>箭头直线<br><code>A --&gt; B</code></p>
+</li>
+</ul>
+<p>没箭头直线<br><code>A --- B</code></p>
+<p>线上加文字, 最好用双引号<br><code>A--&quot;This is the text&quot;---B</code></p>
+<p>虚线<br><code>A -.-&gt; B</code></p>
+<p>虚线加文字<br><code>A -.&quot;text&quot;.-&gt; B</code></p>
+<p>粗直线箭头<br><code>A == text ==&gt; B</code></p>
+<pre><code>* 图形形状
+</code></pre>
+<p>id</p>
+<p>id1[方形]</p>
+<p>id1(圆边)</p>
+<p>id1((圆形))</p>
+<p>id1&gt;非对称图]</p>
+<p>id1{菱形}</p>
+<p>id1</p>
+<p>id1[&#x2F;平行四边行&#x2F;]</p>
+<p>id1[\平行四边行]</p>
+<p>A[&#x2F;梯形]</p>
+<p>B[\梯形&#x2F;]</p>
+<pre><code>
+```mermaid
+graph TD
+id0
+
+id1[方形 - id1]
+
+id2(圆边)
+
+id3((圆形))
+
+id4&gt;非对称图]
+
+id5&#123;菱形&#125;
+
+id6&#123;&#123;六角形&#125;&#125;
+
+id7[/平行四边行/]
+
+id8[\平行四边行\]
+
+A1[/梯形\]
+
+B1[\梯形/]
+
+id0 --&gt; id1
+id1 -.-&gt; id2
+id2 ==&gt; id3
+id3 --- id4
+id4 === id5
+id5 -.- id6
+id7 --&gt; id8
+
+id8 --&gt; A1
+A1 --&gt; B1
+</code></pre>
+<ul>
+<li>子图<pre><code>subgraph title
+  graph definition
+end
+</code></pre>
+<h4 id="4-1-2-示例"><a href="#4-1-2-示例" class="headerlink" title="4.1.2 示例"></a>4.1.2 示例</h4><pre class=" language-markdown"><code class="language-markdown">graph TB
+  c1-->a2
+<span class="token code keyword">    subgraph one</span>
+  a1-->a2
+  end
+<span class="token code keyword">    subgraph two</span>
+  b1-->b2
+  end
+<span class="token code keyword">    subgraph three</span>
+  c1-->c2
+  end
+</code></pre>
+</li>
+</ul>
+<pre class=" language-mermaid"><code class="language-mermaid">graph TB
+    c1-->a2
+      subgraph one
+    a1-->a2
+    end
+      subgraph two
+    b1-->b2
+    end
+      subgraph three
+    c1-->c2
+    end
+</code></pre>
+<h3 id="4-2-顺序图"><a href="#4-2-顺序图" class="headerlink" title="4.2 顺序图"></a>4.2 顺序图</h3><pre class=" language-markdown"><code class="language-markdown">sequenceDiagram
+<span class="token code keyword">    Alice->>John: Hello John, how are you?</span>
+<span class="token code keyword">    John-->>Alice: Great!</span>
+</code></pre>
+<pre class=" language-mermaid"><code class="language-mermaid">sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+</code></pre>
+<pre class=" language-mermaid"><code class="language-mermaid">graph TD
+a["start12222 - a"]
+
+a -."sssssss".-> b
+a -."aaa".-> c
+b =="kkkk"==> d
+
+a --> d
+b --> c
+b ==> d
+
+style a fill:#f9f,stroke:#333,stroke-width:4px
+style b fill:#3ff,stroke:#333,stroke-width:4px
+</code></pre>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">duTianze</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://dutianze.github.io/2020/01/05/previous/markdown-tutorial/">https://dutianze.github.io/2020/01/05/previous/markdown-tutorial/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">duTianze</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/others/">
+                                    <span class="chip bg-color">others</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'cb422a410088a1496669',
+        clientSecret: '4028fd1e417d1da93a4f69f578a5382d79092196',
+        repo: 'dutianze.github.io',
+        owner: 'duTianze',
+        admin: ["duTianze"],
+        id: '2020-01-05T16-08-27',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/31/collect/like/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="home">
+                        
+                        <span class="card-title">home</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            java
+JDK16
+java 设计模式
+MyBatis
+mkyong 各种 java 代码示例
+baeldung 教程
+spring 官网
+
+react &amp; JavaScript
+https://developedbyed.com
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/collect/">
+                        <span class="chip bg-color">collect</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/12/11/previous/influxdb-concepts/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="InfluxDB Concepts">
+                        
+                        <span class="card-title">InfluxDB Concepts</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            influxdb概念InfluxDB关键概念例子measurement:census
+
+
+
+time
+butterflies
+honeybees
+location
+scientist
+
+
+
+2015-08-18T00:00:00Z
+12
+2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/influxdb/">
+                        <span class="chip bg-color">influxdb</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">duTianze</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/duTianze" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:dutianzer@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1151681132" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1151681132" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

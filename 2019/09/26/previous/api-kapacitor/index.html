@@ -1,0 +1,1076 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="kapacitor api, duTianze">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>kapacitor api | duTianze</title>
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="duTianze" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/logo.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">duTianze</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/logo.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">duTianze</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">kapacitor api</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/kapacitor/">
+                                <span class="chip bg-color">kapacitor</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-09-26
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="定义任务"><a href="#定义任务" class="headerlink" title="定义任务"></a>定义任务</h2><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p><code>id</code> : <code>dutianze-t</code></p>
+<pre class=" language-http"><code class="language-http">POST /kapacitor/v1/tasks
+&amp;#123;
+    "id" : "dutianze-t",
+    "type" : "stream",
+    "dbrps" : [&amp;#123;"db": "api", "rp" : "autogen"&amp;#125;],
+    "script" : "var db = 'api'\n\nvar rp = 'autogen'\n\nvar measurement = 'account_login'\n\nvar groupBy = ['third_type']\n\nvar whereFilter = lambda: TRUE\n\nvar name = 'dutianze-t'\n\nvar idVar = name + '-&amp;#123;&amp;#123;.Group&amp;#125;&amp;#125;'\n\nvar message = ''\n\nvar idTag = 'alertID'\n\nvar levelTag = 'level'\n\nvar messageField = 'message'\n\nvar durationField = 'duration'\n\nvar outputDB = 'chronograf'\n\nvar outputRP = 'autogen'\n\nvar outputMeasurement = 'alerts'\n\nvar triggerType = 'relative'\n\nvar shift = 10m\n\nvar crit = 10\n\nvar data = stream\n    |from()\n        .database(db)\n        .retentionPolicy(rp)\n        .measurement(measurement)\n        .groupBy(groupBy)\n        .where(whereFilter)\n    |eval(lambda: \"value\")\n        .as('value')\n\nvar past = data\n    |shift(shift)\n\nvar current = data\n\nvar trigger = past\n    |join(current)\n        .as('past', 'current')\n    |eval(lambda: abs(float(\"current.value\" - \"past.value\")) / float(\"past.value\") * 100.0)\n        .keep()\n        .as('value')\n    |alert()\n        .crit(lambda: \"value\" > crit)\n        .stateChangesOnly()\n        .message(message)\n        .id(idVar)\n        .idTag(idTag)\n        .levelTag(levelTag)\n        .messageField(messageField)\n        .durationField(durationField)\n\ntrigger\n    |eval(lambda: float(\"value\"))\n        .as('value')\n        .keep()\n    |influxDBOut()\n        .create()\n        .database(outputDB)\n        .retentionPolicy(outputRP)\n        .measurement(outputMeasurement)\n        .tag('alertName', name)\n        .tag('triggerType', triggerType)\n\ntrigger\n    |httpOut('output')\n",
+    "status" : "enabled"
+&amp;#125;
+</code></pre>
+<pre class=" language-http"><code class="language-http">&amp;#123;
+    "link": &amp;#123;
+        "rel": "self",
+        "href": "/kapacitor/v1/tasks/dutianze-t"
+    &amp;#125;,
+    "id": "dutianze-t",
+    "template-id": "",
+    "type": "stream",
+    "dbrps": [
+        &amp;#123;
+            "db": "api",
+            "rp": "autogen"
+        &amp;#125;
+    ],
+    "script": "var db = 'api'\n\nvar rp = 'autogen'\n\nvar measurement = 'account_login'\n\nvar groupBy = ['third_type']\n\nvar whereFilter = lambda: TRUE\n\nvar name = 'dutianze-t'\n\nvar idVar = name + '-&amp;#123;&amp;#123;.Group&amp;#125;&amp;#125;'\n\nvar message = ''\n\nvar idTag = 'alertID'\n\nvar levelTag = 'level'\n\nvar messageField = 'message'\n\nvar durationField = 'duration'\n\nvar outputDB = 'chronograf'\n\nvar outputRP = 'autogen'\n\nvar outputMeasurement = 'alerts'\n\nvar triggerType = 'relative'\n\nvar shift = 10m\n\nvar crit = 10\n\nvar data = stream\n    |from()\n        .database(db)\n        .retentionPolicy(rp)\n        .measurement(measurement)\n        .groupBy(groupBy)\n        .where(whereFilter)\n    |eval(lambda: \"value\")\n        .as('value')\n\nvar past = data\n    |shift(shift)\n\nvar current = data\n\nvar trigger = past\n    |join(current)\n        .as('past', 'current')\n    |eval(lambda: abs(float(\"current.value\" - \"past.value\")) / float(\"past.value\") * 100.0)\n        .keep()\n        .as('value')\n    |alert()\n        .crit(lambda: \"value\" > crit)\n        .stateChangesOnly()\n        .message(message)\n        .id(idVar)\n        .idTag(idTag)\n        .levelTag(levelTag)\n        .messageField(messageField)\n        .durationField(durationField)\n\ntrigger\n    |eval(lambda: float(\"value\"))\n        .as('value')\n        .keep()\n    |influxDBOut()\n        .create()\n        .database(outputDB)\n        .retentionPolicy(outputRP)\n        .measurement(outputMeasurement)\n        .tag('alertName', name)\n        .tag('triggerType', triggerType)\n\ntrigger\n    |httpOut('output')\n",
+    "vars": &amp;#123;&amp;#125;,
+    "dot": "digraph dutianze-t &amp;#123;\ngraph [throughput=\"0.00 points/s\"];\n\nstream0 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\nstream0 -> from1 [processed=\"0\"];\n\nfrom1 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\nfrom1 -> eval2 [processed=\"0\"];\n\neval2 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\neval2 -> shift3 [processed=\"0\"];\neval2 -> join5 [processed=\"0\"];\n\nshift3 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\nshift3 -> join5 [processed=\"0\"];\n\njoin5 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\njoin5 -> eval6 [processed=\"0\"];\n\neval6 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\neval6 -> alert7 [processed=\"0\"];\n\nalert7 [alerts_inhibited=\"0\" alerts_triggered=\"0\" avg_exec_time_ns=\"0s\" crits_triggered=\"0\" errors=\"0\" infos_triggered=\"0\" oks_triggered=\"0\" warns_triggered=\"0\" working_cardinality=\"0\" ];\nalert7 -> http_out10 [processed=\"0\"];\nalert7 -> eval8 [processed=\"0\"];\n\nhttp_out10 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\n\neval8 [avg_exec_time_ns=\"0s\" errors=\"0\" working_cardinality=\"0\" ];\neval8 -> influxdb_out9 [processed=\"0\"];\n\ninfluxdb_out9 [avg_exec_time_ns=\"0s\" errors=\"0\" points_written=\"0\" working_cardinality=\"0\" write_errors=\"0\" ];\n&amp;#125;",
+    "status": "enabled",
+    "executing": true,
+    "error": "",
+    "stats": &amp;#123;&amp;#125;,
+    "created": "2019-09-26T15:46:19.40868194+08:00",
+    "modified": "2019-09-26T15:46:19.40868194+08:00",
+    "last-enabled": "2019-09-26T15:46:19.40868194+08:00"
+&amp;#125;
+</code></pre>
+<span id="more"></span>
+<h3 id="修改任务的dbrps"><a href="#修改任务的dbrps" class="headerlink" title="修改任务的dbrps"></a>修改任务的dbrps</h3><pre class=" language-http"><code class="language-http">PATCH /kapacitor/v1/tasks/dutianze-t
+&amp;#123;
+    "dbrps": [&amp;#123;"db": "NEW_DATABASE_NAME", "rp" : "NEW_RP_NAME"&amp;#125;]
+&amp;#125;
+</code></pre>
+<h3 id="启用任务"><a href="#启用任务" class="headerlink" title="启用任务"></a>启用任务</h3><pre class=" language-http"><code class="language-http">PATCH /kapacitor/v1/tasks/dutianze-t
+&amp;#123;
+    "status" : "enabled"
+&amp;#125;
+</code></pre>
+<h3 id="停用任务"><a href="#停用任务" class="headerlink" title="停用任务"></a>停用任务</h3><pre class=" language-http"><code class="language-http">PATCH /kapacitor/v1/tasks/dutianze-t
+&amp;#123;
+    "status" : "disabled"
+&amp;#125;
+</code></pre>
+<h3 id="定义任务时直接启用任务"><a href="#定义任务时直接启用任务" class="headerlink" title="定义任务时直接启用任务"></a>定义任务时直接启用任务</h3><pre class=" language-http"><code class="language-http">POST /kapacitor/v1/tasks
+&amp;#123;
+    "id" : "dutianze-t",
+    "type" : "stream",
+    "dbrps" : [&amp;#123;"db": "DATABASE_NAME", "rp" : "RP_NAME"&amp;#125;],
+    "script" : "stream\n    |from()\n        .measurement('cpu')\n",
+    "status" : "enabled"
+&amp;#125;
+</code></pre>
+<h3 id="返回码"><a href="#返回码" class="headerlink" title="返回码"></a>返回码</h3><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>200</td>
+<td>创建的任务, 并带有任务详情</td>
+</tr>
+<tr>
+<td>404</td>
+<td>任务不存在</td>
+</tr>
+</tbody></table>
+<h2 id="获取任务"><a href="#获取任务" class="headerlink" title="获取任务"></a>获取任务</h2><pre class=" language-http"><code class="language-http">GET /kapacitor/v1/tasks/dutianze-t
+</code></pre>
+<pre class=" language-http"><code class="language-http">&amp;#123;
+    "link" : &amp;#123;"rel": "self", "href": "/kapacitor/v1/tasks/TASK_ID"&amp;#125;,
+    "id" : "TASK_ID",
+    "type" : "stream",
+    "dbrps" : [&amp;#123;"db": "DATABASE_NAME", "rp" : "RP_NAME"&amp;#125;],
+    "script" : "stream\n    |from()\n        .measurement('cpu')\n",
+    "dot" : "digraph TASK_ID &amp;#123; ... &amp;#125;",
+    "status" : "enabled",
+    "executing" : true,
+    "error" : "",
+    "created": "2006-01-02T15:04:05Z07:00",
+    "modified": "2006-01-02T15:04:05Z07:00",
+    "last-enabled": "2006-01-03T15:04:05Z07:00",
+    "stats" : &amp;#123;&amp;#125;
+&amp;#125;
+</code></pre>
+<h2 id="删除任务"><a href="#删除任务" class="headerlink" title="删除任务"></a>删除任务</h2><pre class=" language-http"><code class="language-http">DELETE /kapacitor/v1/tasks/TASK_ID
+</code></pre>
+<p>Response 204 —&gt; Success</p>
+<h2 id="列出任务"><a href="#列出任务" class="headerlink" title="列出任务"></a>列出任务</h2><h3 id="获取所有任务"><a href="#获取所有任务" class="headerlink" title="获取所有任务"></a>获取所有任务</h3><pre class=" language-http"><code class="language-http">GET /kapacitor/v1/tasks
+</code></pre>
+<pre class=" language-http"><code class="language-http">&amp;#123;
+    "tasks" : [
+        &amp;#123;
+            "link" : &amp;#123;"rel":"self", "href":"/kapacitor/v1/tasks/TASK_ID"&amp;#125;,
+            "id" : "TASK_ID",
+            "type" : "stream",
+            "dbrps" : [&amp;#123;"db": "DATABASE_NAME", "rp" : "RP_NAME"&amp;#125;],
+            "script" : "stream|from().measurement('cpu')",
+            "dot" : "digraph TASK_ID &amp;#123; ... &amp;#125;",
+            "status" : "enabled",
+            "executing" : true,
+            "error" : "",
+            "stats" : &amp;#123;&amp;#125;
+        &amp;#125;,
+        &amp;#123;
+            "link" : &amp;#123;"rel":"self", "href":"/kapacitor/v1/tasks/ANOTHER_TASK_ID"&amp;#125;,
+            "id" : "ANOTHER_TASK_ID",
+            "type" : "stream",
+            "dbrps" : [&amp;#123;"db": "DATABASE_NAME", "rp" : "RP_NAME"&amp;#125;],
+            "script" : "stream|from().measurement('cpu')",
+            "dot" : "digraph ANOTHER_TASK_ID&amp;#123; ... &amp;#125;",
+            "status" : "disabled",
+            "executing" : true,
+            "error" : "",
+            "stats" : &amp;#123;&amp;#125;
+        &amp;#125;
+    ]
+&amp;#125;
+</code></pre>
+<h3 id="获取匹配的任务-匹配id"><a href="#获取匹配的任务-匹配id" class="headerlink" title="获取匹配的任务(匹配id)"></a>获取匹配的任务(匹配id)</h3><pre class=" language-http"><code class="language-http">GET /kapacitor/v1/tasks?pattern=TASK*
+</code></pre>
+<pre class=" language-http"><code class="language-http">&amp;#123;
+    "tasks" : [
+        &amp;#123;
+            "link" : &amp;#123;"rel":"self", "href":"/kapacitor/v1/tasks/TASK_ID"&amp;#125;,
+            "id" : "TASK_ID",
+            "type" : "stream",
+            "dbrps" : [&amp;#123;"db": "DATABASE_NAME", "rp" : "RP_NAME"&amp;#125;],
+            "script" : "stream|from().measurement('cpu')",
+            "dot" : "digraph TASK_ID &amp;#123; ... &amp;#125;",
+            "status" : "enabled",
+            "executing" : true,
+            "error" : "",
+            "stats" : &amp;#123;&amp;#125;
+        &amp;#125;
+    ]
+&amp;#125;
+</code></pre>
+<p>如果该模式与任何任务都不匹配，将返回一个空列表，成功码200</p>
+<h3 id="获取任务的指定属性"><a href="#获取任务的指定属性" class="headerlink" title="获取任务的指定属性"></a>获取任务的指定属性</h3><p>这里选择<code>status</code>、<code>executing</code>、<code>error</code>, 另外<code>id</code>和<code>link</code>永远会返回</p>
+<pre class=" language-http"><code class="language-http">GET /kapacitor/v1/tasks?fields=status&amp;fields=executing&amp;fields=error
+</code></pre>
+<pre class=" language-http"><code class="language-http">&amp;#123;
+    "tasks": [
+        &amp;#123;
+            "error": "",
+            "executing": false,
+            "id": "1",
+            "link": &amp;#123;
+                "rel": "self",
+                "href": "/kapacitor/v1/tasks/1"
+            &amp;#125;,
+            "status": "disabled"
+        &amp;#125;,
+        &amp;#123;
+            "error": "",
+            "executing": false,
+            "id": "111",
+            "link": &amp;#123;
+                "rel": "self",
+                "href": "/kapacitor/v1/tasks/111"
+            &amp;#125;,
+            "status": "disabled"
+        &amp;#125;
+    ]
+&amp;#125;
+</code></pre>
+<p>response 200 mean success</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Ping"><a href="#Ping" class="headerlink" title="Ping"></a>Ping</h3><p>可以通过这个接口ping服务, 来验证是否成功连接kapacitor, 返回204代表成功</p>
+<pre class=" language-http"><code class="language-http">GET /kapacitor/v1/ping
+</code></pre>
+<p>return: <code>204 no content</code></p>
+<h3 id="显示所有api接口"><a href="#显示所有api接口" class="headerlink" title="显示所有api接口"></a>显示所有api接口</h3><pre class=" language-http"><code class="language-http">GET /kapacitor/v1/:routes
+</code></pre>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p>更多api查看<a target="_blank" rel="noopener" href="https://docs.influxdata.com/kapacitor/v1.5/working/api/">kapacitor</a>官网</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">duTianze</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://dutianze.github.io/2019/09/26/previous/api-kapacitor/">https://dutianze.github.io/2019/09/26/previous/api-kapacitor/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">duTianze</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/kapacitor/">
+                                    <span class="chip bg-color">kapacitor</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'cb422a410088a1496669',
+        clientSecret: '4028fd1e417d1da93a4f69f578a5382d79092196',
+        repo: 'dutianze.github.io',
+        owner: 'duTianze',
+        admin: ["duTianze"],
+        id: '2019-09-26T15-54-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2019/09/27/previous/tickscript/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="TICKscript Introducing">
+                        
+                        <span class="card-title">TICKscript Introducing</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            TICKscript入门介绍TICKscript语言Kapacitor使用名为TICKscript的领域特定语言（DSL）来定义**任务(tasks)，这些任务涉及数据的提取，转换和加载，此外还涉及跟踪任意更改和检测数据中的事件。一项常见任
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-09-27
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/kapacitor/">
+                        <span class="chip bg-color">kapacitor</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/09/26/previous/api-kapacitor/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="kapacitor api">
+                        
+                        <span class="card-title">kapacitor api</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            定义任务创建id : dutianze-t
+POST /kapacitor/v1/tasks
+&amp;#123;
+    "id" : "dutianze-t",
+    "type" : "stream",
+    "dbrps" : 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-09-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duTianze
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/kapacitor/">
+                        <span class="chip bg-color">kapacitor</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">duTianze</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/duTianze" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:dutianzer@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1151681132" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1151681132" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
