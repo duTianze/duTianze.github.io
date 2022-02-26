@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>duTianze</title>
   
-  
+  <subtitle>The World</subtitle>
   <link href="https://dutianze.github.io/atom.xml" rel="self"/>
   
   <link href="https://dutianze.github.io/"/>
-  <updated>2022-02-24T17:31:43.856Z</updated>
+  <updated>2022-02-25T16:06:16.703Z</updated>
   <id>https://dutianze.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第九课 四川料理は　辛いです</title>
+    <link href="https://dutianze.github.io/2022/02/25/japan/japaneselesson9/"/>
+    <id>https://dutianze.github.io/2022/02/25/japan/japaneselesson9/</id>
+    <published>2022-02-25T15:48:10.000Z</published>
+    <updated>2022-02-25T16:06:16.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;单词&quot;&gt;&lt;a href=&quot;#单词&quot; class=&quot;headerlink&quot; title=&quot;单词&quot;&gt;&lt;/a&gt;单词&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th</summary>
+        
+      
+    
+    
+    
+    
+    <category term="japan" scheme="https://dutianze.github.io/tags/japan/"/>
+    
+  </entry>
   
   <entry>
     <title>第八课 李さんは日本語で　手紙を書きます</title>

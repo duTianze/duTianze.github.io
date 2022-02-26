@@ -256,24 +256,13 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    subtitle
+                The World
                 
             </div>
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
+                    
                 
             </div>
         </div>
@@ -282,9 +271,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -300,7 +287,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">12</a></span>
+    <span class="count"><a href="/">13</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -325,7 +312,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">12</a></span>
+    <span class="count"><a href="/">13</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -478,7 +465,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,1,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,1,0,0,0,0,0,0,0,0,0,0,3],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -544,7 +531,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["kapacitor","japan","influxdb","collect","others","python","hexo"]
+                data: ["kapacitor","japan","influxdb","collect","hexo","python","others"]
             }
         ],
         yAxis: [
@@ -557,7 +544,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [4,2,2,1,1,1,1],
+                data: [4,3,2,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -716,8 +703,8 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/kapacitor/">
-                <span class="chip center-align waves-effect waves-light chip-default">kapacitor</span>
+            <a href="/tags/japan/">
+                <span class="chip center-align waves-effect waves-light chip-default">japan</span>
             </a>
             
             
@@ -728,8 +715,14 @@
             
             
             
-            <a href="/tags/japan/">
-                <span class="chip center-align waves-effect waves-light chip-default">japan</span>
+            <a href="/tags/kapacitor/">
+                <span class="chip center-align waves-effect waves-light chip-default">kapacitor</span>
+            </a>
+            
+            
+            
+            <a href="/tags/hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
             </a>
             
             
@@ -740,20 +733,14 @@
             
             
             
-            <a href="/tags/others/">
-                <span class="chip center-align waves-effect waves-light chip-default">others</span>
-            </a>
-            
-            
-            
             <a href="/tags/python/">
                 <span class="chip center-align waves-effect waves-light chip-default">python</span>
             </a>
             
             
             
-            <a href="/tags/hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            <a href="/tags/others/">
+                <span class="chip center-align waves-effect waves-light chip-default">others</span>
             </a>
             
             
