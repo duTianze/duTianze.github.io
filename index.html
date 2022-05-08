@@ -1,561 +1,144 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="duTianze">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>duTianze</title>
-    <link rel="icon" type="image/jpeg" href="/logo.jpg">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="duTianze" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/logo.jpg" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">duTianze</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/logo.jpg" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">duTianze</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>dutianze's blog - The World</title><meta name="author" content="duTianze"><meta name="copyright" content="duTianze"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="dutianze&#39;s blog">
+<meta property="og:url" content="https://dutianze.github.io/index.html">
+<meta property="og:site_name" content="dutianze&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dutianze.github.io/images/avatar.png">
+<meta property="article:author" content="duTianze">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dutianze.github.io/images/avatar.png"><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="https://dutianze.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
     }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'dutianze\'s blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-05-09 01:51:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                The World
-                
-            </div>
-
-            <div class="description center-align">
-                
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/duTianze" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:dutianzer@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1151681132" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1151681132" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
 
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/10/japan/japaneselesson14/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第十四课 昨日　デパートへ　行って、買い物しました">
-                            
-                            <span class="card-title">第十四课 昨日　デパートへ　行って、買い物しました</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
-
-
-単語（たんご）
-仮名（かな）
-声調（せいちょう）
-意味（いみ）
-
-
-
-船便
-ふなびん
-0
-海运
-
-
-書類
-しょるい
-0
-文件，文稿
-
-
-原稿
-げんこう
-0
-稿子，原稿
-
-
-記事
-きじ
-1
-报道
-
-
-メモ
-
-1
-记录
-
-
-駅前
-えき
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/07/japan/japaneselesson13/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第十三课 机の　上に　本が　三冊　あります">
-                            
-                            <span class="card-title">第十三课 机の　上に　本が　三冊　あります</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="dutianze's blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/index.html"><i class="fa-fw fas fa-video"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/images/banner_img.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">dutianze's blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/index.html"><i class="fa-fw fas fa-video"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">dutianze's blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/07/japan/japaneselesson13/" title="第十三课 机の　上に　本が　三冊　あります"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十三课 机の　上に　本が　三冊　あります"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/07/japan/japaneselesson13/" title="第十三课 机の　上に　本が　三冊　あります">第十三课 机の　上に　本が　三冊　あります</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-07T15:24:22.000Z" title="发表于 2022-03-07 23:24:22">2022-03-07</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -598,49 +181,130 @@
 タバコ
 
 0
-烟，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+烟，烟草
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/06/japan/japaneselesson12/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第十二课 李さんは　森さんより　若いです">
-                            
-                            <span class="card-title">第十二课 李さんは　森さんより　若いです</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+漫画
+まんが
+0
+漫画
+
+
+ガレージ
+
+2
+车库，汽车房
+
+
+修理
+しゅうり
+1
+修理
+
+
+生ビール
+なまビール
+3
+生啤
+
+
+焼き鳥
+やきとり
+0
+烤鸡肉串
+
+
+唐揚げ
+からあげ
+0
+炸鸡
+
+
+肉じゃが
+にくじゃが
+0
+土豆炖肉
+
+
+ボーリング
+
+0
+保龄球
+
+
+髪
+かみ
+2
+头发
+
+
+象
+ぞう
+1
+象，大象
+
+
+昼
+ひる
+2
+白天，中午
+
+
+ほか
+ほか
+0
+另外，其他
+
+
+かかります
+
+4
+[动 1]花费（时间，金钱）
+
+
+咲きます
+さきます
+3
+[动 1]花开
+
+
+泳ぎます
+およぎます
+4
+[动 1]游泳
+
+
+遊びます
+あそびます
+4
+[动 1]玩，玩耍
+
+
+吸います
+すいます
+3
+[动 1]吸（烟）
+
+
+切ります
+きります
+3
+[动 1]剪，切，割
+
+
+大体
+だいたい
+0
+大约
+
+
+とりあえず
+とりあえず
+3
+暂且
+
+
+どのぐらい& ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/06/japan/japaneselesson12/" title="第十二课 李さんは　森さんより　若いです"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十二课 李さんは　森さんより　若いです"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/06/japan/japaneselesson12/" title="第十二课 李さんは　森さんより　若いです">第十二课 李さんは　森さんより　若いです</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-06T02:48:20.000Z" title="发表于 2022-03-06 10:48:20">2022-03-06</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -677,49 +341,153 @@
 寿司
 すし
 2
+寿司
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/02/japan/japaneselesson11/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第十一课 小野さんは　歌が　好きです">
-                            
-                            <span class="card-title">第十一课 小野さんは　歌が　好きです</span>
-                        </div>
-                    </a>
+ナシ
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+2
+梨
+
+
+バナナ
+
+1
+香蕉
+
+
+ミカン
+
+1
+橘子
+
+
+焼酎
+しょうちゅう
+3
+烧酒
+
+
+日本酒
+にほんしゅ
+0
+日本酒
+
+
+紅茶
+こうちゃ
+0
+红茶
+
+
+ウーロン茶
+〜ちゃ
+3
+乌龙茶
+
+
+ジャスミン茶
+
+3
+茉莉花茶
+
+
+緑茶
+りょくちゃ
+0
+绿茶
+
+
+ジュース
+
+1
+果汁
+
+
+人気
+にんき
+0
+声望，受欢迎
+
+
+席
+せき
+1
+座位，席位
+
+
+クラス
+
+1
+班级
+
+
+種類
+しゅるい
+1
+种类
+
+
+背
+せ
+1
+个子
+
+
+兄
+あに
+1
+哥哥，兄长
+
+
+最近
+さいきん
+0
+最近，近来
+
+
+降ります
+ふります
+3
+下（雨、雪），降（雨、雪）
+
+
+若い
+わかい
+2
+年轻
+
+
+暖かい
+あたたかい
+4
+暖和，温暖
+
+
+涼しい
+すずしい
+3
+凉爽
+
+
+速い
+はやい
+2
+快
+
+
+大好き
+だいすき
+1
+非常喜欢
+
+
+いちばん
+
+0
+最，第一
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/02/japan/japaneselesson11/" title="第十一课 小野さんは　歌が　好きです"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十一课 小野さんは　歌が　好きです"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/02/japan/japaneselesson11/" title="第十一课 小野さんは　歌が　好きです">第十一课 小野さんは　歌が　好きです</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-02T01:19:33.000Z" title="发表于 2022-03-02 09:19:33">2022-03-02</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -762,48 +530,164 @@
 ピアノ
 
 0
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+钢琴
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/02/28/japan/japaneselesson10/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第十课 京都の紅葉は　有名です">
-                            
-                            <span class="card-title">第十课 京都の紅葉は　有名です</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+絵
+え
+1
+画儿
+
+
+英語
+えいご
+0
+英语
+
+
+スパイン語
+
+0
+西班牙语
+
+
+スポーツ
+
+2
+体育
+
+
+水泳
+すいえい
+0
+游泳
+
+
+ゴルフ
+
+1
+高尔夫
+
+
+運転
+うんてん
+0
+开车
+
+
+飲み物
+のみもの
+2
+饮料
+
+
+お酒
+おさけ
+0
+酒
+
+
+肉
+にく
+2
+肉
+
+
+野菜
+やさい
+0
+蔬菜
+
+
+果物
+くだもの
+2
+水果
+
+
+ヒマワリ
+
+2
+向日葵
+
+
+バラ
+
+0
+玫瑰
+
+
+コンピューター
+
+3
+电脑
+
+
+窓
+まど
+1
+窗户
+
+
+結婚式
+けっこんしき
+3
+结婚典礼
+
+
+写真展
+しゃしんてん
+2
+摄影展
+
+
+旅館
+りょかん
+0
+旅馆
+
+
+別荘
+べっそう
+3
+别墅
+
+
+寄木細工
+よせぎざいく
+4
+木片儿拼花工艺品
+
+
+模様
+もよう
+0
+花纹
+
+
+外国
+がいこく
+0
+外围
+
+
+会議
+かいぎ
+1
+公议
+
+
+脚
+あし
+
+腿
+
+
+僕
+ぼく
+
+我
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/28/japan/japaneselesson10/" title="第十课 京都の紅葉は　有名です"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十课 京都の紅葉は　有名です"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/28/japan/japaneselesson10/" title="第十课 京都の紅葉は　有名です">第十课 京都の紅葉は　有名です</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-28T15:29:37.000Z" title="发表于 2022-02-28 23:29:37">2022-02-28</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -846,49 +730,162 @@
 お店
 おみせ
 0
+商店
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/02/25/japan/japaneselesson09/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第九课 四川料理は　辛いです">
-                            
-                            <span class="card-title">第九课 四川料理は　辛いです</span>
-                        </div>
-                    </a>
+人形
+にんぎょう
+0
+玩偶
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+
+作品
+さくひん
+0
+作品
+
+
+彫刻
+ちょうこく
+0
+雕刻
+
+
+自動車
+じどうしゃ
+2
+汽车
+
+
+道具
+どうぐ
+3
+工具
+
+
+魚
+さかな
+0
+鱼
+
+
+お菓子
+おかし
+2
+点心
+
+
+物
+もの
+2
+物品
+
+
+シーズン
+
+1
+季节
+
+
+修学旅行
+しゅうがくりょこう
+5
+休学旅行
+
+
+観光客
+かんこうきゃく
+3
+游客
+
+
+作家
+さっか
+0
+作家
+
+
+部長
+ぶちょう
+0
+部长
+
+
+平日
+へいじつ
+0
+平日
+
+
+日
+ひ
+
+日子
+
+
+生活
+せいかつ
+0
+生活
+
+
+世界
+せかい
+1
+世界
+
+
+晴れ
+はれ
+2
+晴天
+
+
+雨
+あめ
+1
+雨
+
+
+曇る
+くもり
+3
+阴天
+
+
+雪
+ゆき
+2
+雪
+
+
+汚い
+きたない
+3
+脏
+
+
+綺麗
+きれい
+1
+漂亮 干净
+
+
+有名
+ゆうめい
+0
+有名
+
+
+賑やか
+にぎやか
+2
+热闹
+
+
+静か
+しずか
+1 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/25/japan/japaneselesson09/" title="第九课 四川料理は　辛いです"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第九课 四川料理は　辛いです"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/25/japan/japaneselesson09/" title="第九课 四川料理は　辛いです">第九课 四川料理は　辛いです</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-25T15:48:10.000Z" title="发表于 2022-02-25 23:48:10">2022-02-25</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -928,49 +925,170 @@
 食物
 
 
+すき焼き
+好きやき
+0
+日式牛肉火锅
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/02/21/japan/japaneselesson08/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第八课 李さんは日本語で　手紙を書きます">
-                            
-                            <span class="card-title">第八课 李さんは日本語で　手紙を書きます</span>
-                        </div>
-                    </a>
+温泉
+おんせん
+０
+温泉
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+
+お湯
+おゆ
+０
+热水
+
+
+水
+みず
+０
+凉水
+
+
+浴衣
+ゆかた
+０
+浴衣
+
+
+眺め
+ながめ
+０
+景色
+
+
+薬
+くすり
+０
+药
+
+
+天気
+てんき
+1
+天气
+
+
+海
+うみ
+1
+大海
+
+
+山
+やま
+2
+山
+
+
+紙
+かみ
+2
+纸
+
+
+にユース
+
+1
+新闻
+
+
+女性
+じょせい
+0
+女性
+
+
+お客様
+おきゃくさま
+4
+来宾
+
+
+グラス
+
+1
+玻璃杯
+
+
+歌舞伎
+かぶき
+0
+歌舞伎
+
+
+気持ち
+きもち
+0
+心情
+
+
+たくさん
+
+3
+很多
+
+
+辛い
+からい
+2
+辣
+
+
+甘い
+あまい
+0
+甜
+
+
+塩辛い
+しおからい
+
+咸
+
+
+酸っぱい
+すっぱい
+
+酸
+
+
+苦い
+にがい
+
+苦
+
+
+美味しい
+おいしい
+0
+好吃
+
+
+まずい
+
+
+难吃
+
+
+熱い
+あつい
+
+热 烫
+
+
+冷たい
+つめたい
+0
+凉
+
+
+楽し
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/21/japan/japaneselesson08/" title="第八课 李さんは日本語で　手紙を書きます"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第八课 李さんは日本語で　手紙を書きます"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/21/japan/japaneselesson08/" title="第八课 李さんは日本語で　手紙を書きます">第八课 李さんは日本語で　手紙を書きます</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-21T00:37:53.000Z" title="发表于 2022-02-21 08:37:53">2022-02-21</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -1004,49 +1122,137 @@
 纪念品
 
 
-スケジュー
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+スケジュール表
+すけじょーるひょう
+0
+日程表
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/02/17/japan/japaneselesson07/">
-                        <div class="card-image">
-                            
-                            <img src="/images/biaori.png" class="responsive-img" alt="第七课 李さんは毎日コーヒーを飲みます">
-                            
-                            <span class="card-title">第七课 李さんは毎日コーヒーを飲みます</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                单词
+写真集
+しゃしんしゅう
+2
+影集
+
+
+花
+はな
+2
+花
+
+
+お金
+おかね
+0
+金钱
+
+
+ボールペン
+ぼーるぺん
+0
+圆珠笔
+
+
+宿題
+しゅくだい
+0
+作业
+
+
+航空便
+こうくうびん
+0
+航空邮件
+
+
+速達
+そくたつ
+0
+速递
+
+
+ファックス
+ふぁっくす
+１
+传真
+
+
+メール
+めーる
+0
+邮件
+
+
+電話番号
+でんわばんごう
+4
+电话号码
+
+
+住所
+じゅうしょ
+1
+住址
+
+
+名前
+なまえ
+0
+姓名
+
+
+件
+けん
+1
+事件
+
+
+新聞紙
+しんぶんし
+３
+报纸
+
+
+紙飛行機
+かみひこうき
+4
+折纸的飞机
+
+
+チョコレート
+ちょこれーと
+3
+巧克力
+
+
+アイスクリーム
+あいすくりーむ
+5
+冰淇凌
+
+
+小麦粉
+こむぎこ
+0
+面粉
+
+
+箸
+はし
+1
+筷子
+
+
+すぶーん
+すぶーん
+2
+勺子
+
+
+お兄さん
+おにいさん
+2
+哥哥
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/17/japan/japaneselesson07/" title="第七课 李さんは毎日コーヒーを飲みます"><img class="post_bg" src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第七课 李さんは毎日コーヒーを飲みます"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/17/japan/japaneselesson07/" title="第七课 李さんは毎日コーヒーを飲みます">第七课 李さんは毎日コーヒーを飲みます</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-17T01:46:27.000Z" title="发表于 2022-02-17 09:46:27">2022-02-17</time></span></div><div class="content">单词
 
 
 単語（たんご）
@@ -1087,50 +1293,151 @@
 
 
 ケーキ
-けー
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+けーき
+１
+蛋糕
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/japan/">
-                            <span class="chip bg-color">japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/03/31/collect/like/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="home">
-                            
-                            <span class="card-title">home</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                java
+お粥
+おかゆ
+０
+粥
+
+
+昼ごはん
+ひるごはん
+３
+午饭
+
+
+お弁当
+おべんとう
+０
+盒饭
+
+
+蕎麦
+そば
+1
+荞麦面
+
+
+うどん
+
+0
+面条
+
+
+親子丼
+おやこどん
+0
+鸡肉鸡蛋盖饭
+
+
+カレー
+かれー
+０
+咖喱
+
+
+卵
+たまご
+２
+鸡蛋
+
+
+チース
+ちーす
+１
+干酪
+
+
+リンゴ
+りんご
+０
+苹果
+
+
+イチゴ
+いちご
+０
+草莓
+
+
+そば屋
+そばや
+２
+荞麦面馆
+
+
+テニス
+てにす
+1
+网球
+
+
+ジョギング
+じょぎんぐ
+0
+慢跑
+
+
+サッカー
+さっかー
+1
+足球
+
+
+野球
+やきゅう
+0
+棒球
+
+
+申込書
+もうしこみしょ
+6
+申请书
+
+
+手紙
+てがみ
+0
+信
+
+
+シーディー
+しーでぃー
+3
+CD
+
+
+音楽
+おんがく
+1
+音乐
+
+
+映画
+えいが
+0
+电影
+
+
+動物園
+どうぶつえん
+4
+动物园
+
+
+パンダ
+ぱんだ
+1
+熊猫
+
+
+飲みます
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/03/31/collect/like/" title="home"><img class="post_bg" src="/images/default_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="home"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/31/collect/like/" title="home">home</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-31T06:39:35.000Z" title="发表于 2021-03-31 14:39:35">2021-03-31</time></span></div><div class="content">java
 JDK16
 java 设计模式
 MyBatis
@@ -1139,138 +1446,57 @@ baeldung 教程
 spring 官网
 
 react &amp; JavaScript
-https://developedbyed.com
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-31
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+https://developedbyed.com账号密码在 Firefox 密码中搜索地址teachable.com
+全栈公开课 2021
+主流网站的克隆
+developer.mozilla.org
+现代 JavaScript 教程中文版
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/collect/">
-                            <span class="chip bg-color">collect</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/10/24/previous/jupyter/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="jupyter notebook">
-                            
-                            <span class="card-title">jupyter notebook</span>
-                        </div>
-                    </a>
+公开课
+CMU 15-445
+awesome-courses
+awesome-cs-courses-zh
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                介绍Jupyter NotebookJupyter Notebook 是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+算法
+Algs4 课本官网
+Algs4 公开课
+Algs4 源代码
+leetcode
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/python/">
-                            <span class="chip bg-color">python</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/01/05/previous/markdown-tutorial/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Markdown tutorial">
-                            
-                            <span class="card-title">Markdown tutorial</span>
-                        </div>
-                    </a>
+语言标日初级精讲
+音乐合集ジョジョの奇妙な冒険
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2020/10/24/previous/jupyter/" title="jupyter notebook"><img class="post_bg" src="/images/default_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="jupyter notebook"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/24/previous/jupyter/" title="jupyter notebook">jupyter notebook</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-24T07:13:10.000Z" title="发表于 2020-10-24 15:13:10">2020-10-24</time></span></div><div class="content">介绍Jupyter NotebookJupyter Notebook 是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。
+Jupyter Notebook 的主要特点
+编程时具有语法高亮、缩进、tab 补全的功能。
+可直接通过浏览器运行代码，同时在代码块下方展示运行结果。
+对代码编写说明文档或语句时，支持 Markdown 语法。
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                [TOC]
+使用安装打开命令行输入
+pip3 install jupyter
 
-Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
+运行打开命令行输入
+jupyter notebook
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/others/">
-                            <span class="chip bg-color">others</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/12/11/previous/influxdb-concepts/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="InfluxDB Concepts">
-                            
-                            <span class="card-title">InfluxDB Concepts</span>
-                        </div>
-                    </a>
+命令行状态
+浏览器自动跳转之后的状态
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                influxdb概念InfluxDB关键概念例子measurement:census
+注意：之后在网页 jupyter 的所有操作，都请保持终端不要关闭，因为一旦关闭终端，就会断开与本地服务器的链接，你将无法在 Jupyter Notebook 中进行其他操作啦.
+
+修改配置有时候默认的位置并不方便你操作，你可以修改启动时，jupyter 使用的本地地址打开命令行输入
+jupyter notebook --generate-config
+
+输入这 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2020/01/05/previous/markdown-tutorial/" title="Markdown tutorial"><img class="post_bg" src="/images/default_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Markdown tutorial"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/01/05/previous/markdown-tutorial/" title="Markdown tutorial">Markdown tutorial</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-01-05T08:08:27.000Z" title="发表于 2020-01-05 16:08:27">2020-01-05</time></span></div><div class="content">[TOC]
+
+Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。
+
+1 概述1.1 简介Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia等网站，如各大博客平台：WordPress、Drupal、简书等。
+1.2 Markdown编辑器推荐使用多平台的atom, 同时安装markdown-preview-enhanced插件
+
+2、基本语法2.1 标题# 这是 &lt;h1> 一级标题
+
+## 这是 &lt;h2> 二级标题
+
+### 这是 &lt;h3 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2019/12/11/previous/influxdb-concepts/" title="InfluxDB Concepts"><img class="post_bg" src="/images/default_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="InfluxDB Concepts"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/11/previous/influxdb-concepts/" title="InfluxDB Concepts">InfluxDB Concepts</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-11T03:07:55.000Z" title="发表于 2019-12-11 11:07:55">2019-12-11</time></span></div><div class="content">influxdb概念InfluxDB关键概念例子measurement:census
 
 
 
@@ -1284,177 +1510,65 @@ scientist
 
 2015-08-18T00:00:00Z
 12
+23
+1
+langstroth
+
+
+2015-08-18T00:00:00Z
+1
+30
+1
+perpetua
+
+
+2015-08-18T00:06:00Z
+11
+28
+1
+langstroth
+
+
+2015-08-18T00:06:00Z
+3
+28
+1
+perpetua
+
+
+2015-08-18T05:54:00Z
 2
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-11
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                duTianze
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/influxdb/">
-                            <span class="chip bg-color">influxdb</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
+11
+2
+langstroth
 
 
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
+2015-08-18T06:00:00Z
+1
+10
+2
+langstroth
 
 
+2015-08-18T06:06:00Z
+8
+23
+2
+perpetua
 
 
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">duTianze</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            
-            
-            
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/duTianze" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+2015-08-18T06:12:00Z
+7
+22
+2
+perpetua
 
 
-
-    <a href="mailto:dutianzer@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1151681132" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1151681132" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script src="/js/search.js"></script>
-<script type="text/javascript">
-$(function () {
-    searchFunc("/search.xml", 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+数据是从2015年8月18日00:00到2015年8月18日6:12，在两个位置（位置1和位置2），两位科学家（langstroth和perpetua）计数的蝴蝶和蜜 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2019/12/09/previous/influxdb/" title="InfluxDB Introducing"><img class="post_bg" src="/images/default_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="InfluxDB Introducing"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/09/previous/influxdb/" title="InfluxDB Introducing">InfluxDB Introducing</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-12-09T08:00:00.000Z" title="发表于 2019-12-09 16:00:00">2019-12-09</time></span></div><div class="content">InfluxDB介绍8888888           .d888 888                   8888888b.  888888b.
+  888            d88P"  888                   888  "Y88b 888  "88b
+  888            888    888                   888    888 888  .88P
+  888   88888b.  888888 888 888  888 888  888 888    888 8888888K.
+  888   888 "88b 888    888 888  888  Y8bd8P' 888    888 888  "Y88b
+  888   888  888 888    888 888  888   X88K   888    888 888    888
+  888   888  888 888    888 Y88b 888 .d8""8b. 888  .d88P 888   d88P
+8888888 888  888 88 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">duTianze</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/03/07/japan/japaneselesson13/" title="第十三课 机の　上に　本が　三冊　あります"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十三课 机の　上に　本が　三冊　あります"/></a><div class="content"><a class="title" href="/2022/03/07/japan/japaneselesson13/" title="第十三课 机の　上に　本が　三冊　あります">第十三课 机の　上に　本が　三冊　あります</a><time datetime="2022-03-07T15:24:22.000Z" title="发表于 2022-03-07 23:24:22">2022-03-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/06/japan/japaneselesson12/" title="第十二课 李さんは　森さんより　若いです"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十二课 李さんは　森さんより　若いです"/></a><div class="content"><a class="title" href="/2022/03/06/japan/japaneselesson12/" title="第十二课 李さんは　森さんより　若いです">第十二课 李さんは　森さんより　若いです</a><time datetime="2022-03-06T02:48:20.000Z" title="发表于 2022-03-06 10:48:20">2022-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/02/japan/japaneselesson11/" title="第十一课 小野さんは　歌が　好きです"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十一课 小野さんは　歌が　好きです"/></a><div class="content"><a class="title" href="/2022/03/02/japan/japaneselesson11/" title="第十一课 小野さんは　歌が　好きです">第十一课 小野さんは　歌が　好きです</a><time datetime="2022-03-02T01:19:33.000Z" title="发表于 2022-03-02 09:19:33">2022-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/28/japan/japaneselesson10/" title="第十课 京都の紅葉は　有名です"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十课 京都の紅葉は　有名です"/></a><div class="content"><a class="title" href="/2022/02/28/japan/japaneselesson10/" title="第十课 京都の紅葉は　有名です">第十课 京都の紅葉は　有名です</a><time datetime="2022-02-28T15:29:37.000Z" title="发表于 2022-02-28 23:29:37">2022-02-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/25/japan/japaneselesson09/" title="第九课 四川料理は　辛いです"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第九课 四川料理は　辛いです"/></a><div class="content"><a class="title" href="/2022/02/25/japan/japaneselesson09/" title="第九课 四川料理は　辛いです">第九课 四川料理は　辛いです</a><time datetime="2022-02-25T15:48:10.000Z" title="发表于 2022-02-25 23:48:10">2022-02-25</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/collect/" style="font-size: 1.1em; color: #999">collect</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a> <a href="/tags/influxdb/" style="font-size: 1.23em; color: #999ea6">influxdb</a> <a href="/tags/japan/" style="font-size: 1.5em; color: #99a9bf">japan</a> <a href="/tags/kapacitor/" style="font-size: 1.37em; color: #99a4b2">kapacitor</a> <a href="/tags/others/" style="font-size: 1.1em; color: #999">others</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/01/"><span class="card-archive-list-date">一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/12/"><span class="card-archive-list-date">十二月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/10/"><span class="card-archive-list-date">十月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/09/"><span class="card-archive-list-date">九月 2019</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-05-08T17:51:14.610Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/images/banner_img.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By duTianze</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

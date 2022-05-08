@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>duTianze</title>
+  <title>dutianze&#39;s blog</title>
   
   <subtitle>The World</subtitle>
   <link href="https://dutianze.github.io/atom.xml" rel="self"/>
   
   <link href="https://dutianze.github.io/"/>
-  <updated>2022-03-10T01:36:58.169Z</updated>
+  <updated>2022-05-08T17:39:37.616Z</updated>
   <id>https://dutianze.github.io/</id>
   
   <author>
@@ -17,37 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第十四课 昨日　デパートへ　行って、買い物しました</title>
-    <link href="https://dutianze.github.io/2022/03/10/japan/japaneselesson14/"/>
-    <id>https://dutianze.github.io/2022/03/10/japan/japaneselesson14/</id>
-    <published>2022-03-10T01:27:10.000Z</published>
-    <updated>2022-03-10T01:36:58.169Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;单词&quot;&gt;&lt;a href=&quot;#单词&quot; class=&quot;headerlink&quot; title=&quot;单词&quot;&gt;&lt;/a&gt;单词&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th</summary>
-        
-      
-    
-    
-    
-    
-    <category term="japan" scheme="https://dutianze.github.io/tags/japan/"/>
-    
-  </entry>
-  
-  <entry>
     <title>第十三课 机の　上に　本が　三冊　あります</title>
     <link href="https://dutianze.github.io/2022/03/07/japan/japaneselesson13/"/>
     <id>https://dutianze.github.io/2022/03/07/japan/japaneselesson13/</id>
     <published>2022-03-07T15:24:22.000Z</published>
-    <updated>2022-03-10T01:26:14.209Z</updated>
+    <updated>2022-05-08T17:39:37.616Z</updated>
     
     
       
@@ -73,7 +47,7 @@
     <link href="https://dutianze.github.io/2022/03/06/japan/japaneselesson12/"/>
     <id>https://dutianze.github.io/2022/03/06/japan/japaneselesson12/</id>
     <published>2022-03-06T02:48:20.000Z</published>
-    <updated>2022-03-06T13:28:58.996Z</updated>
+    <updated>2022-05-08T17:39:37.618Z</updated>
     
     
       
@@ -99,7 +73,7 @@
     <link href="https://dutianze.github.io/2022/03/02/japan/japaneselesson11/"/>
     <id>https://dutianze.github.io/2022/03/02/japan/japaneselesson11/</id>
     <published>2022-03-02T01:19:33.000Z</published>
-    <updated>2022-03-06T02:32:02.732Z</updated>
+    <updated>2022-05-08T17:39:37.609Z</updated>
     
     
       
@@ -125,7 +99,7 @@
     <link href="https://dutianze.github.io/2022/02/28/japan/japaneselesson10/"/>
     <id>https://dutianze.github.io/2022/02/28/japan/japaneselesson10/</id>
     <published>2022-02-28T15:29:37.000Z</published>
-    <updated>2022-03-01T17:19:53.690Z</updated>
+    <updated>2022-05-08T17:39:37.612Z</updated>
     
     
       
@@ -151,7 +125,7 @@
     <link href="https://dutianze.github.io/2022/02/25/japan/japaneselesson09/"/>
     <id>https://dutianze.github.io/2022/02/25/japan/japaneselesson09/</id>
     <published>2022-02-25T15:48:10.000Z</published>
-    <updated>2022-02-28T17:18:47.900Z</updated>
+    <updated>2022-05-08T17:39:37.615Z</updated>
     
     
       
@@ -177,7 +151,7 @@
     <link href="https://dutianze.github.io/2022/02/21/japan/japaneselesson08/"/>
     <id>https://dutianze.github.io/2022/02/21/japan/japaneselesson08/</id>
     <published>2022-02-21T00:37:53.000Z</published>
-    <updated>2022-02-28T17:18:53.672Z</updated>
+    <updated>2022-05-08T17:39:37.613Z</updated>
     
     
       
@@ -203,7 +177,7 @@
     <link href="https://dutianze.github.io/2022/02/17/japan/japaneselesson07/"/>
     <id>https://dutianze.github.io/2022/02/17/japan/japaneselesson07/</id>
     <published>2022-02-17T01:46:27.000Z</published>
-    <updated>2022-02-28T17:18:57.551Z</updated>
+    <updated>2022-05-08T17:38:35.663Z</updated>
     
     
       
