@@ -6,7 +6,7 @@
   <link href="https://dutianze.github.io/atom.xml" rel="self"/>
   
   <link href="https://dutianze.github.io/"/>
-  <updated>2022-06-05T10:32:07.796Z</updated>
+  <updated>2022-06-05T11:08:03.596Z</updated>
   <id>https://dutianze.github.io/</id>
   
   <author>
@@ -17,24 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://dutianze.github.io/2022/06/03/japan/resource/"/>
-    <id>https://dutianze.github.io/2022/06/03/japan/resource/</id>
-    <published>2022-06-03T04:19:41.513Z</published>
-    <updated>2022-06-05T10:32:07.796Z</updated>
+    <title>日语学习实践</title>
+    <link href="https://dutianze.github.io/2022/06/05/japan/resource/"/>
+    <id>https://dutianze.github.io/2022/06/05/japan/resource/</id>
+    <published>2022-06-05T07:25:29.000Z</published>
+    <updated>2022-06-05T11:08:03.596Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;title: 日语学习实践&lt;br&gt;date: 2022-06-05 15:25:29&lt;br&gt;tags: Japan&lt;br&gt;cover: 7.png&lt;/p&gt;
-&lt;h1 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h1&gt;&lt;h2 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h2&gt;&lt;h3</summary>
         
       
     
     
     
+    
+    <category term="Japan" scheme="https://dutianze.github.io/tags/Japan/"/>
     
   </entry>
   
@@ -43,7 +44,7 @@
     <link href="https://dutianze.github.io/2022/05/15/tool/browser/"/>
     <id>https://dutianze.github.io/2022/05/15/tool/browser/</id>
     <published>2022-05-14T16:08:43.000Z</published>
-    <updated>2022-06-05T10:39:12.564Z</updated>
+    <updated>2022-06-05T11:04:28.663Z</updated>
     
     
       
@@ -272,7 +273,7 @@
     <link href="https://dutianze.github.io/2020/10/24/previous/jupyter/"/>
     <id>https://dutianze.github.io/2020/10/24/previous/jupyter/</id>
     <published>2020-10-24T07:13:10.000Z</published>
-    <updated>2022-06-05T10:40:46.771Z</updated>
+    <updated>2022-06-05T11:05:43.525Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;h2 id=&quot;Jupyter-Notebook&quot;&gt;&lt;a href=&quot;#Jupyter-Notebook&quot; class=&quot;headerlink&quot; title=&quot;Jupyter Notebook&quot;&gt;&lt;/a&gt;Jupyter Notebook&lt;/h2&gt;&lt;p&gt;Jupyter Notebook 是以网页的形式打开，可以在网页页面中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示的程序。如在编程过程中需要编写说明文档，可在同一个页面中直接编写，便于作及时的说明和解释。&lt;/p&gt;
