@@ -1,0 +1,473 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Markdown tutorial | てんりのブログ</title><meta name="keywords" content="others"><meta name="author" content="てんり"><meta name="copyright" content="てんり"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="[TOC]  Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。  1 概述1.1 简介Mar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown tutorial">
+<meta property="og:url" content="https://dutianze.github.io/posts/692ee4582071/index.html">
+<meta property="og:site_name" content="てんりのブログ">
+<meta property="og:description" content="[TOC]  Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。  1 概述1.1 简介Mar">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dutianze.github.io/images/default_cover.jpg">
+<meta property="article:published_time" content="2020-01-05T08:08:27.000Z">
+<meta property="article:modified_time" content="2022-02-19T13:25:47.712Z">
+<meta property="article:author" content="てんり">
+<meta property="article:tag" content="others">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dutianze.github.io/images/default_cover.jpg"><link rel="shortcut icon" href="/img/avatar.jpeg"><link rel="canonical" href="https://dutianze.github.io/posts/692ee4582071/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Markdown tutorial',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-19 21:25:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="てんりのブログ" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">てんりのブログ</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">Markdown tutorial</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-01-05T08:08:27.000Z" title="发表于 2020-01-05 16:08:27">2020-01-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-19T13:25:47.712Z" title="更新于 2022-02-19 21:25:47">2022-02-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Markdown tutorial"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><p>[TOC]</p>
+<blockquote>
+<p>Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</p>
+</blockquote>
+<h1 id="1-概述"><a href="#1-概述" class="headerlink" title="1 概述"></a>1 概述</h1><h2 id="1-1-简介"><a href="#1-1-简介" class="headerlink" title="1.1 简介"></a>1.1 简介</h2><p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia等网站，如各大博客平台：WordPress、Drupal、简书等。</p>
+<h2 id="1-2-Markdown编辑器"><a href="#1-2-Markdown编辑器" class="headerlink" title="1.2 Markdown编辑器"></a>1.2 Markdown编辑器</h2><p>推荐使用多平台的<a target="_blank" rel="noopener" href="https://github.com/atom/atom/releases/tag/v1.42.0">atom</a>, 同时安装<a target="_blank" rel="noopener" href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">markdown-preview-enhanced</a>插件</p>
+<span id="more"></span>
+<h1 id="2、基本语法"><a href="#2、基本语法" class="headerlink" title="2、基本语法"></a>2、基本语法</h1><h2 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 这是 &lt;h1> 一级标题</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是 &lt;h2> 二级标题</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 这是 &lt;h3> 三级标题</span>
+
+<span class="token title important"><span class="token punctuation">####</span> 这是 &lt;h4> 四级标题</span>
+
+<span class="token title important"><span class="token punctuation">#####</span> 这是 &lt;h5> 五级标题</span>
+
+<span class="token title important"><span class="token punctuation">######</span> 这是 &lt;h6> 六级标题</span>
+</code></pre>
+<h2 id="2-2-强调"><a href="#2-2-强调" class="headerlink" title="2.2 强调"></a>2.2 强调</h2><ul>
+<li><em>斜体</em><br>&#96;&#96;&#96;markdown</li>
+</ul>
+<p><em>斜体</em><br><em>斜体</em></p>
+<pre><code>
+* **粗体**
+```markdown
+**粗体**
+__粗体__
+</code></pre>
+<ul>
+<li><del>横线删除</del><pre class=" language-markdown"><code class="language-markdown">~~横线删除~~
+</code></pre>
+<h2 id="2-3-段落和换行"><a href="#2-3-段落和换行" class="headerlink" title="2.3 段落和换行"></a>2.3 段落和换行</h2></li>
+<li>两个回车<br>&#96;&#96;&#96;markdown<br>这是第一段</li>
+</ul>
+<p>这是第二段</p>
+<pre><code>* 一段结尾加两个空格+回车
+```markdown
+这是第一段
+这是第二段
+</code></pre>
+<ul>
+<li>使用HTML的语法<code>&lt;br&gt;</code>作为换行</li>
+</ul>
+<h2 id="2-4-分割线"><a href="#2-4-分割线" class="headerlink" title="2.4 分割线"></a>2.4 分割线</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token hr punctuation">---</span>
+<span class="token hr punctuation">***</span>
+<span class="token italic"><span class="token punctuation">_</span><span class="token punctuation">_</span><span class="token punctuation">_</span></span>
+</code></pre>
+<hr>
+<hr>
+<h2 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 可以只用一个 “>” 号来写一个多行的引用，
+
+<span class="token blockquote punctuation">></span> 也可以每一行都用一个 “>” 号
+<span class="token blockquote punctuation">></span> 与上面一个效果
+
+<span class="token blockquote punctuation">> ></span> 还可以是嵌套引用，用多个“>”
+</code></pre>
+<h2 id="2-6-列表"><a href="#2-6-列表" class="headerlink" title="2.6 列表"></a>2.6 列表</h2><h3 id="2-6-1-无序列表"><a href="#2-6-1-无序列表" class="headerlink" title="2.6.1 无序列表"></a>2.6.1 无序列表</h3><p>无序列表可以在每行开头用 <code>*</code>、<code>+</code>、<code>-</code>来表示，也可以三者混合一起，推荐使用相同的字符，避免混乱。</p>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token list punctuation">-</span> Item 1
+<span class="token list punctuation">-</span> Item 2
+  <span class="token list punctuation">-</span> Item 2a
+  <span class="token list punctuation">-</span> Item 2b
+</code></pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2<ul>
+<li>Item 2a</li>
+<li>Item 2b<ul>
+<li>a<h3 id="2-6-2-有序列表"><a href="#2-6-2-有序列表" class="headerlink" title="2.6.2 有序列表"></a>2.6.2 有序列表</h3>有序列表用数字接着一个英文句点来表示，数字可无序，但还是推荐使用1.、2.，避免混乱。<br>&#96;&#96;&#96;markdown</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3<ol>
+<li>Item 3a</li>
+<li>Item 3b<br>&#96;&#96;&#96;</li>
+</ol>
+</li>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3<ol>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-7-代码"><a href="#2-7-代码" class="headerlink" title="2.7 代码"></a>2.7 代码</h2><h3 id="2-7-1-行内代码块"><a href="#2-7-1-行内代码块" class="headerlink" title="2.7.1 行内代码块"></a>2.7.1 行内代码块</h3><p>这是一个代码<code>code</code> <code>aaa</code></p>
+<h3 id="2-7-2-段落代码块"><a href="#2-7-2-段落代码块" class="headerlink" title="2.7.2 段落代码块"></a>2.7.2 段落代码块</h3><p>使用 ``` 来表示代码块。</p>
+<p>```java<br>public static void main(String[] args) {<br>    System.out.println(“hello world”);<br>}<br>```</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="2-8-链接"><a href="#2-8-链接" class="headerlink" title="2.8 链接"></a>2.8 链接</h2><ul>
+<li>行内式<pre><code>[GitHub](http://github.com)
+</code></pre>
+<a target="_blank" rel="noopener" href="http://github.com/">GitHub</a></li>
+</ul>
+<pre><code>[GitHub][1]
+
+* 参考式
+[1]: http://github.com
+</code></pre>
+<p><a target="_blank" rel="noopener" href="http://github.com/">GitHub</a></p>
+<h2 id="2-9-图片"><a href="#2-9-图片" class="headerlink" title="2.9 图片"></a>2.9 图片</h2><pre><code>1951
+</code></pre>
+<p>2075</p>
+<h2 id="2-10-表格"><a href="#2-10-表格" class="headerlink" title="2.10 表格"></a>2.10 表格</h2><ul>
+<li>表格最简单的写法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>score</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>001</td>
+<td>Mark</td>
+<td>90</td>
+</tr>
+<tr>
+<td>002</td>
+<td>Ford</td>
+<td>80</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Alan</td>
+<td>95</td>
+</tr>
+</tbody></table>
+<pre><code>id    |   name   |   score
+---   |   ---    |   ---
+001   |   Mark   |   90
+002   |   Ford   |   80
+003   |   Alan   |   95
+</code></pre>
+<ul>
+<li>用<code>:</code>对齐，<code>:</code>写在在<code>---</code>的左边就是左对齐，右边就是右对齐，两边都写就是居中。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">long_long_id</th>
+<th align="center">long_long_name</th>
+<th align="right">long_long_score</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">001</td>
+<td align="center">Mark</td>
+<td align="right">90</td>
+</tr>
+<tr>
+<td align="center">002</td>
+<td align="center">Ford</td>
+<td align="right">80</td>
+</tr>
+<tr>
+<td align="center">003</td>
+<td align="center">Alan</td>
+<td align="right">95</td>
+</tr>
+</tbody></table>
+<pre><code>|long_long_id|long_long_name|long_long_score|
+|    ---     |    :---:     |     ---:      |
+|    001     |     Mark     |      90       |
+|    002     |     Ford     |      80       |
+|    003     |     Alan     |      95       |
+</code></pre>
+<h1 id="3-拓展的语法"><a href="#3-拓展的语法" class="headerlink" title="3 拓展的语法"></a>3 拓展的语法</h1><h2 id="3-1-目录"><a href="#3-1-目录" class="headerlink" title="3.1 目录"></a>3.1 目录</h2><p>添加<code>[TOC]</code></p>
+<h2 id="3-2-脚注"><a href="#3-2-脚注" class="headerlink" title="3.2 脚注"></a>3.2 脚注</h2><pre><code>Content [^1]
+
+[^1]: Hi! This is a footnote
+</code></pre>
+<p>Content [^1]</p>
+<p>[^1]: Hi! This is a footnote</p>
+<h2 id="3-3-上标"><a href="#3-3-上标" class="headerlink" title="3.3 上标"></a>3.3 上标</h2><p>30^th^  a^b^</p>
+<h2 id="3-4-下标"><a href="#3-4-下标" class="headerlink" title="3.4 下标"></a>3.4 下标</h2><p>30<del>th</del>  a<del>b</del></p>
+<h2 id="3-5-标记"><a href="#3-5-标记" class="headerlink" title="3.5 标记"></a>3.5 标记</h2><p>&#x3D;&#x3D;marked&#x3D;&#x3D;</p>
+<h1 id="4、数学"><a href="#4、数学" class="headerlink" title="4、数学"></a>4、数学</h1><p><a target="_blank" rel="noopener" href="https://katex.org/docs/supported.html">语法参考katex</a></p>
+<pre><code>$f(x) = sin(x)$
+
+$$\sum_&#123;n=1&#125;^&#123;100&#125; &#123;n + 1&#125;$$
+
+$$\overrightarrow&#123;AB&#125;$$
+</code></pre>
+<p>$f(x) &#x3D; sin(x)$</p>
+<p>$$\sum_{n&#x3D;1}^{100} {n + 1}$$</p>
+<p>$$\overrightarrow{AB}$$</p>
+<h1 id="5、图像"><a href="#5、图像" class="headerlink" title="5、图像"></a>5、图像</h1><p>atom插件<code>markdown-preview-enhanced</code>支持<a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid/#/flowchart">mermaid</a></p>
+<h2 id="4-1流程图"><a href="#4-1流程图" class="headerlink" title="4.1流程图"></a>4.1流程图</h2><h3 id="4-1-1-语法"><a href="#4-1-1-语法" class="headerlink" title="4.1.1 语法"></a>4.1.1 语法</h3><p>```mermaid<br>graph TD<br>a –&gt; b<br>a –&gt; c<br>```</p>
+<blockquote>
+<p>注意 以下省略 &#96;&#96;&#96;mermaid</p>
+</blockquote>
+<ul>
+<li><p>方向</p>
+<ul>
+<li><p>TB - top bottom</p>
+</li>
+<li><p>BT - bottom  top</p>
+</li>
+<li><p>RL - right left</p>
+</li>
+<li><p>LR - left right</p>
+</li>
+<li><p>TD - top down</p>
+</li>
+</ul>
+</li>
+<li><p>线段<br>&#96;&#96;&#96;<br>箭头直线<br><code>A --&gt; B</code></p>
+</li>
+</ul>
+<p>没箭头直线<br><code>A --- B</code></p>
+<p>线上加文字, 最好用双引号<br><code>A--&quot;This is the text&quot;---B</code></p>
+<p>虚线<br><code>A -.-&gt; B</code></p>
+<p>虚线加文字<br><code>A -.&quot;text&quot;.-&gt; B</code></p>
+<p>粗直线箭头<br><code>A == text ==&gt; B</code></p>
+<pre><code>* 图形形状
+</code></pre>
+<p>id</p>
+<p>id1[方形]</p>
+<p>id1(圆边)</p>
+<p>id1((圆形))</p>
+<p>id1&gt;非对称图]</p>
+<p>id1{菱形}</p>
+<p>id1</p>
+<p>id1[&#x2F;平行四边行&#x2F;]</p>
+<p>id1[\平行四边行]</p>
+<p>A[&#x2F;梯形]</p>
+<p>B[\梯形&#x2F;]</p>
+<pre><code>
+```mermaid
+graph TD
+id0
+
+id1[方形 - id1]
+
+id2(圆边)
+
+id3((圆形))
+
+id4&gt;非对称图]
+
+id5&#123;菱形&#125;
+
+id6&#123;&#123;六角形&#125;&#125;
+
+id7[/平行四边行/]
+
+id8[\平行四边行\]
+
+A1[/梯形\]
+
+B1[\梯形/]
+
+id0 --&gt; id1
+id1 -.-&gt; id2
+id2 ==&gt; id3
+id3 --- id4
+id4 === id5
+id5 -.- id6
+id7 --&gt; id8
+
+id8 --&gt; A1
+A1 --&gt; B1
+</code></pre>
+<ul>
+<li>子图<pre><code>subgraph title
+  graph definition
+end
+</code></pre>
+<h4 id="4-1-2-示例"><a href="#4-1-2-示例" class="headerlink" title="4.1.2 示例"></a>4.1.2 示例</h4><pre class=" language-markdown"><code class="language-markdown">graph TB
+  c1-->a2
+<span class="token code keyword">    subgraph one</span>
+  a1-->a2
+  end
+<span class="token code keyword">    subgraph two</span>
+  b1-->b2
+  end
+<span class="token code keyword">    subgraph three</span>
+  c1-->c2
+  end
+</code></pre>
+</li>
+</ul>
+<pre class=" language-mermaid"><code class="language-mermaid">graph TB
+    c1-->a2
+      subgraph one
+    a1-->a2
+    end
+      subgraph two
+    b1-->b2
+    end
+      subgraph three
+    c1-->c2
+    end
+</code></pre>
+<h3 id="4-2-顺序图"><a href="#4-2-顺序图" class="headerlink" title="4.2 顺序图"></a>4.2 顺序图</h3><pre class=" language-markdown"><code class="language-markdown">sequenceDiagram
+<span class="token code keyword">    Alice->>John: Hello John, how are you?</span>
+<span class="token code keyword">    John-->>Alice: Great!</span>
+</code></pre>
+<pre class=" language-mermaid"><code class="language-mermaid">sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+</code></pre>
+<pre class=" language-mermaid"><code class="language-mermaid">graph TD
+a["start12222 - a"]
+
+a -."sssssss".-> b
+a -."aaa".-> c
+b =="kkkk"==> d
+
+a --> d
+b --> c
+b ==> d
+
+style a fill:#f9f,stroke:#333,stroke-width:4px
+style b fill:#3ff,stroke:#333,stroke-width:4px
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://dutianze.github.io">てんり</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://dutianze.github.io/posts/692ee4582071/">https://dutianze.github.io/posts/692ee4582071/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://dutianze.github.io" target="_blank">てんりのブログ</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/others/">others</a></div><div class="post_share"><div class="social-share" data-image="/images/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/931e17999416/"><img class="prev-cover" src="/posts/931e17999416/pre.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">jupyter notebook</div></div></a></div><div class="next-post pull-right"><a href="/posts/0e666f170b8c/"><img class="next-cover" src="/images/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">InfluxDB Concepts</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">てんり</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/duTianze"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/duTianze" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:dutianzer@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">1 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Markdown%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 Markdown编辑器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%81%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">2、基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E6%A0%87%E9%A2%98"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%BC%BA%E8%B0%83"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 强调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8C"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 段落和换行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%BC%95%E7%94%A8"><span class="toc-number">2.5.</span> <span class="toc-text">2.5 引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E5%88%97%E8%A1%A8"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-1-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">2.6.1.</span> <span class="toc-text">2.6.1 无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-2-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">2.6.2.</span> <span class="toc-text">2.6.2 有序列表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-%E4%BB%A3%E7%A0%81"><span class="toc-number">2.7.</span> <span class="toc-text">2.7 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-1-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">2.7.1.</span> <span class="toc-text">2.7.1 行内代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-2-%E6%AE%B5%E8%90%BD%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">2.7.2.</span> <span class="toc-text">2.7.2 段落代码块</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-%E9%93%BE%E6%8E%A5"><span class="toc-number">2.8.</span> <span class="toc-text">2.8 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-%E5%9B%BE%E7%89%87"><span class="toc-number">2.9.</span> <span class="toc-text">2.9 图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-10-%E8%A1%A8%E6%A0%BC"><span class="toc-number">2.10.</span> <span class="toc-text">2.10 表格</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%8B%93%E5%B1%95%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">3 拓展的语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E7%9B%AE%E5%BD%95"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E8%84%9A%E6%B3%A8"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 脚注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E4%B8%8A%E6%A0%87"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 上标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E4%B8%8B%E6%A0%87"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 下标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%A0%87%E8%AE%B0"><span class="toc-number">3.5.</span> <span class="toc-text">3.5 标记</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4%E3%80%81%E6%95%B0%E5%AD%A6"><span class="toc-number">4.</span> <span class="toc-text">4、数学</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5%E3%80%81%E5%9B%BE%E5%83%8F"><span class="toc-number">5.</span> <span class="toc-text">5、图像</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">5.1.</span> <span class="toc-text">4.1流程图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1-%E8%AF%AD%E6%B3%95"><span class="toc-number">5.1.1.</span> <span class="toc-text">4.1.1 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-2-%E7%A4%BA%E4%BE%8B"><span class="toc-number">5.1.1.1.</span> <span class="toc-text">4.1.2 示例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%A1%BA%E5%BA%8F%E5%9B%BE"><span class="toc-number">5.1.2.</span> <span class="toc-text">4.2 顺序图</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/cbe2e0fe7279/" title="日语语法指南总结"><img src="/posts/cbe2e0fe7279/image-20220723162056406.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语语法指南总结"/></a><div class="content"><a class="title" href="/posts/cbe2e0fe7279/" title="日语语法指南总结">日语语法指南总结</a><time datetime="2022-06-19T08:47:28.000Z" title="发表于 2022-06-19 16:47:28">2022-06-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/095fc3c593e9/" title="日语学习实践"><img src="/posts/095fc3c593e9/%E5%96%B5%E5%B8%95%E6%96%AF.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语学习实践"/></a><div class="content"><a class="title" href="/posts/095fc3c593e9/" title="日语学习实践">日语学习实践</a><time datetime="2022-06-05T07:25:29.000Z" title="发表于 2022-06-05 15:25:29">2022-06-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4e8c05efecf6/" title="浏览器"><img src="/posts/4e8c05efecf6/a3fcdfe3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浏览器"/></a><div class="content"><a class="title" href="/posts/4e8c05efecf6/" title="浏览器">浏览器</a><time datetime="2022-05-14T16:08:43.000Z" title="发表于 2022-05-15 00:08:43">2022-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2d7ac4ddeba0/" title="第十三课 机の　上に　本が　三冊　あります"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十三课 机の　上に　本が　三冊　あります"/></a><div class="content"><a class="title" href="/posts/2d7ac4ddeba0/" title="第十三课 机の　上に　本が　三冊　あります">第十三课 机の　上に　本が　三冊　あります</a><time datetime="2022-03-07T15:24:22.000Z" title="发表于 2022-03-07 23:24:22">2022-03-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/9ebdad2225b5/" title="第十二课 李さんは　森さんより　若いです"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十二课 李さんは　森さんより　若いです"/></a><div class="content"><a class="title" href="/posts/9ebdad2225b5/" title="第十二课 李さんは　森さんより　若いです">第十二课 李さんは　森さんより　若いです</a><time datetime="2022-03-06T02:48:20.000Z" title="发表于 2022-03-06 10:48:20">2022-03-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

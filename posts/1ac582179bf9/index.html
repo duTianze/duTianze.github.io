@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>TICKscript Introducing | てんりのブログ</title><meta name="keywords" content="kapacitor"><meta name="author" content="てんり"><meta name="copyright" content="てんり"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="TICKscript入门介绍TICKscript语言Kapacitor使用名为TICKscript的领域特定语言（DSL）来定义**任务(tasks)，这些任务涉及数据的提取，转换和加载，此外还涉及跟踪任意更改和检测数据中的事件。一项常见任务是定义警报，TICKscript使用.tick文件来定义用于处理数据的管道(pipelines)**。TICKscript语言旨在将 节点(node) 中定义">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TICKscript Introducing">
+<meta property="og:url" content="https://dutianze.github.io/posts/1ac582179bf9/index.html">
+<meta property="og:site_name" content="てんりのブログ">
+<meta property="og:description" content="TICKscript入门介绍TICKscript语言Kapacitor使用名为TICKscript的领域特定语言（DSL）来定义**任务(tasks)，这些任务涉及数据的提取，转换和加载，此外还涉及跟踪任意更改和检测数据中的事件。一项常见任务是定义警报，TICKscript使用.tick文件来定义用于处理数据的管道(pipelines)**。TICKscript语言旨在将 节点(node) 中定义">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dutianze.github.io/images/default_cover.jpg">
+<meta property="article:published_time" content="2019-09-27T06:20:00.000Z">
+<meta property="article:modified_time" content="2022-02-19T13:25:47.707Z">
+<meta property="article:author" content="てんり">
+<meta property="article:tag" content="kapacitor">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dutianze.github.io/images/default_cover.jpg"><link rel="shortcut icon" href="/img/avatar.jpeg"><link rel="canonical" href="https://dutianze.github.io/posts/1ac582179bf9/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TICKscript Introducing',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-19 21:25:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="てんりのブログ" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">てんりのブログ</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">TICKscript Introducing</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-09-27T06:20:00.000Z" title="发表于 2019-09-27 14:20:00">2019-09-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-19T13:25:47.707Z" title="更新于 2022-02-19 21:25:47">2022-02-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="TICKscript Introducing"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><h1 id="TICKscript入门"><a href="#TICKscript入门" class="headerlink" title="TICKscript入门"></a>TICKscript入门</h1><h2 id="介绍TICKscript语言"><a href="#介绍TICKscript语言" class="headerlink" title="介绍TICKscript语言"></a>介绍TICKscript语言</h2><p>Kapacitor使用名为<strong>TICKscript</strong>的领域特定语言（DSL）来定义**任务(tasks)<strong>，这些任务涉及数据的提取，转换和加载，此外还涉及跟踪任意更改和检测数据中的事件。<br>一项常见任务是定义警报，TICKscript使用<code>.tick</code>文件来定义用于处理数据的</strong>管道(pipelines)**。TICKscript语言旨在将 <strong>节点(node)</strong> 中定义的数据处理操作的调用链接在一起。</p>
+<p>每个脚本都有一个固定范围，并且该范围中的每个变量都可以引用文字值(例如字符串，整数或浮点值)，或者node实例的可以被调用的方法。</p>
+<p>node有两种形式的方法</p>
+<ul>
+<li><strong>属性方法(Property methods)</strong> 修改node的内部属性，并且返回此节点的引用，用点<code>.</code>来表明这是属性方法</li>
+<li><strong>链方法(Chaining methods)</strong> 创建新的**子节点(child node)**，返回该子节点的引用，用管<code>|</code>来表明这是属性方法<span id="more"></span></li>
+</ul>
+<h2 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h2><p>在TICKscript中，基本类型是<strong>节点(Node)<strong>，节点有</strong>属性(properties)<strong>和</strong>链方法(chaining methods)<strong>。节点可以被</strong>父节点(parent node)<strong>或</strong>兄弟节点(sibling node)<strong>的链方法创建。<br>无论是父节点创建的节点还是兄弟节点创建的节点，每种类型的节点都有一样的</strong>方法签名(method signature)</strong>[1]，链方法可以接受0或多个参数来初始化节点。<br>常见的节点类型有<code>batch</code>，<code>query</code>，<code>stream</code>，<code>from</code>，<code>eval</code> 和 <code>alert</code>。</p>
+<p>顶级节点<code>stream</code>和<code>batch</code>，它们用来声明将要定义的任务的处理类型。复杂属性的节点可以通过属性方法来创建。</p>
+<p>节点<strong>想要(wants)<strong>的数据，是</strong>流模式</strong>或者<strong>批模式</strong>的数据，有些节点可以全部处理。节点**提供(provides)**的数据，是流数据或批数据，有些可以都提供。</p>
+<p>因此，根据 wants&#x2F;provides模式，可以定义四种通用的节点用例。</p>
+<ul>
+<li><strong>batch -&gt; stream</strong> 计算平均值、最小值、最大值</li>
+<li><strong>batch -&gt; batch</strong> 在一批数据中识别异常值</li>
+<li><strong>stream -&gt; batch</strong> 把相似数据组合在一起</li>
+<li><strong>stream -&gt; stream</strong> 应用数学函数，比如对点值求对数</li>
+</ul>
+<p>[1] <strong>方法签名</strong>: 是方法名称、参数的数量、类型和顺序</p>
+<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><p>每个TICKscript有一个或多个**管道(Pipeline)**。管道是节点逻辑上的链接，并且无法循环到较早的节点。管道可以分配给变量，然后可以将不同管道合并，例如，<code>join</code>或者<code>union</code>节点，部分管道也可以分解为功能单元。<br>管道的初始节点是kapacitor的任务处理类型，可以是<code>stream</code>或者<code>batch</code>，这两种类型的管道无法合并。</p>
+<h2 id="stream还是batch"><a href="#stream还是batch" class="headerlink" title="stream还是batch"></a>stream还是batch</h2><p>使用哪种取决于系统资源和计算的方式：<br>批处理适合长时间范围大量数据的计算，因为批处理将数据保留在硬盘上，所以查询时会导致数据库的高负载。<br>流处理适合短时间范围的计算，因为不必将大量放在内存上，所以查询负载很小。</p>
+<table>
+<thead>
+<tr>
+<th>stream</th>
+<th>batch</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>逐数据点读取数据，kapacitor向influxDB订阅他所感兴趣的内容</td>
+<td>从数据库中读取一帧历史数据</td>
+</tr>
+<tr>
+<td>在数据存储到influxDB前处理数据</td>
+<td>只能处理已经处于influxDB中的数据。</td>
+</tr>
+<tr>
+<td>在短时间范围内计算用流处理</td>
+<td>在长时间范围内计算用批处理</td>
+</tr>
+</tbody></table>
+<h2 id="像图一样的管道"><a href="#像图一样的管道" class="headerlink" title="像图一样的管道"></a>像图一样的管道</h2><p>Kapacitor中的管道是有向无环图，也就是说每条边都是数据流向的方向，并且管道中不能有环。边也可以被认为是父节点与子节点的数据流关系。<br>任何管道的开始出都将声明两个基本边之一，好处是确定了任务的处理类型，后面的节点在其自身及其子节点之间建立边类型。</p>
+<ul>
+<li><strong>stream -&gt; from()</strong> 一次传输单个数据点的边</li>
+<li><strong>batch -&gt; query()</strong> 一次传输一块数据的边</li>
+</ul>
+<h2 id="管道的有效性"><a href="#管道的有效性" class="headerlink" title="管道的有效性"></a>管道的有效性</h2><p>当串起节点并创建kapacitor任务，kapacitor将检查TICKscript语法结构是否正确，以及边是否匹配节点。但是，直到运行时才会验证管道是否起有效，错误信息会出现在kapacitor的日志中。<br>例一是由于管道缺少字段值而引发的运行时错误，因为没有设置<code>eval</code>节点的属性<code>keep()</code>。kapacitor无法预测任务在运行时的数据形式，只会记录错误。</p>
+<p>例一</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>cpu_alert:alert4<span class="token punctuation">]</span> 2017/10/24 14:42:59 E<span class="token operator">!</span> error evaluating expression <span class="token keyword">for</span> level CRITICAL: left reference value <span class="token string">"usage_idle"</span> is missing value
+<span class="token punctuation">[</span>cpu_alert:alert4<span class="token punctuation">]</span> 2017/10/24 14:42:59 E<span class="token operator">!</span> error evaluating expression <span class="token keyword">for</span> level CRITICAL: left reference value <span class="token string">"usage_idle"</span> is missing value
+</code></pre>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="stream-gt-from-管道"><a href="#stream-gt-from-管道" class="headerlink" title="stream -&gt; from()管道"></a>stream -&gt; from()管道</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> db <span class="token operator">=</span> <span class="token string">'telegraf'</span>
+
+<span class="token keyword">var</span> rp <span class="token operator">=</span> <span class="token string">'autogen'</span>
+
+<span class="token keyword">var</span> measurement <span class="token operator">=</span> <span class="token string">'cpu'</span>
+
+stream
+    <span class="token operator">|</span><span class="token keyword">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">retentionPolicy</span><span class="token punctuation">(</span>rp<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">measurement</span><span class="token punctuation">(</span>measurement<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">httpOut</span><span class="token punctuation">(</span><span class="token string">'dump'</span><span class="token punctuation">)</span>
+</code></pre>
+<p>使用变量db表示数据库、rp表示保留策略、measurement表示数据库中的表，最后会把cpu数据以json形式缓存到HTTP REST端口。</p>
+<p>这个例子有三个节点</p>
+<ul>
+<li>基础节点<code>stream</code></li>
+<li>必要节点<code>from()</code>，定义数据流</li>
+<li>处理节点<code>httpOut()</code>，将接收到的数据缓存到Kapacitor的REST服务。</li>
+</ul>
+<p>包含两条边</p>
+<ul>
+<li><strong>stream-&gt;from()</strong> 设置任务和数据流的类型</li>
+<li><strong>from()-&gt;httpOut()</strong> 将数据流传递到HTTP输出端口</li>
+</ul>
+<p><code>from()</code>节点包含三个属性方法</p>
+<ul>
+<li>database(db) - 设置数据库</li>
+<li>retentionPolicy(rp) - 设置保留策略</li>
+<li>measurement(measurement) - 设置测量指标</li>
+</ul>
+<h3 id="batch-gt-query-管道"><a href="#batch-gt-query-管道" class="headerlink" title="batch -&gt; query()管道"></a>batch -&gt; query()管道</h3><pre class=" language-javascript"><code class="language-javascript">batch
+    <span class="token operator">|</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'SELECT * FROM "telegraf"."autogen".cpu WHERE time > now() - 10s'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">period</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span>10s<span class="token punctuation">)</span>
+    <span class="token operator">|</span><span class="token function">httpOut</span><span class="token punctuation">(</span><span class="token string">'dump'</span><span class="token punctuation">)</span>
+</code></pre>
+<p>将把最近10秒钟活动的批测量中的最后cpu数据点缓存到HTTP REST端点</p>
+<p>这个例子有三个节点</p>
+<ul>
+<li>基础节点<code>batch</code></li>
+<li>必要节点<code>query()</code>，定义数据流</li>
+<li>处理节点<code>httpOut()</code>，将接收到的数据缓存到Kapacitor的REST服务。</li>
+</ul>
+<p>包含两条边</p>
+<ul>
+<li><strong>stream-&gt;query()</strong> 设置任务和数据流的类型</li>
+<li><strong>query()-&gt;httpOut()</strong> 将数据流传递到HTTP输出端口</li>
+</ul>
+<p><code>query()</code>节点包含两个属性方法</p>
+<ul>
+<li>period() - 设置覆盖的时间段。</li>
+<li>every() - 设置处理的频率</li>
+</ul>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p>有关使用TICKscript的基本示例，请参见<a target="_blank" rel="noopener" href="https://github.com/influxdata/kapacitor/tree/master/examples">GitHub</a>代码库中的最新示例。<br>有关中级到高级用例的TICKscript解决方案，请参阅<a target="_blank" rel="noopener" href="https://docs.influxdata.com/kapacitor/v1.5/guides/">《指南》</a>文档。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://dutianze.github.io">てんり</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://dutianze.github.io/posts/1ac582179bf9/">https://dutianze.github.io/posts/1ac582179bf9/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://dutianze.github.io" target="_blank">てんりのブログ</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/kapacitor/">kapacitor</a></div><div class="post_share"><div class="social-share" data-image="/images/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/1b9449fcb8db/"><img class="prev-cover" src="/images/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Cafe Themed Hexo Add Gitalk</div></div></a></div><div class="next-post pull-right"><a href="/posts/03497d4295c8/"><img class="next-cover" src="/images/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">kapacitor api</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/91c782298fb3/" title="TICKscript BatchNode"><img class="cover" src="/images/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-10-08</div><div class="title">TICKscript BatchNode</div></div></a></div><div><a href="/posts/03497d4295c8/" title="kapacitor api"><img class="cover" src="/images/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-26</div><div class="title">kapacitor api</div></div></a></div><div><a href="/posts/4bb8a6435199/" title="TICKscript syntax"><img class="cover" src="/images/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-29</div><div class="title">TICKscript syntax</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">てんり</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/duTianze"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/duTianze" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:dutianzer@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TICKscript%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">TICKscript入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8DTICKscript%E8%AF%AD%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">介绍TICKscript语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8A%82%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-number">1.3.</span> <span class="toc-text">管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stream%E8%BF%98%E6%98%AFbatch"><span class="toc-number">1.4.</span> <span class="toc-text">stream还是batch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%83%8F%E5%9B%BE%E4%B8%80%E6%A0%B7%E7%9A%84%E7%AE%A1%E9%81%93"><span class="toc-number">1.5.</span> <span class="toc-text">像图一样的管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%9A%84%E6%9C%89%E6%95%88%E6%80%A7"><span class="toc-number">1.6.</span> <span class="toc-text">管道的有效性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.7.</span> <span class="toc-text">示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#stream-gt-from-%E7%AE%A1%E9%81%93"><span class="toc-number">1.7.1.</span> <span class="toc-text">stream -&gt; from()管道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#batch-gt-query-%E7%AE%A1%E9%81%93"><span class="toc-number">1.7.2.</span> <span class="toc-text">batch -&gt; query()管道</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A"><span class="toc-number">1.8.</span> <span class="toc-text">更多</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/cbe2e0fe7279/" title="日语语法指南总结"><img src="/posts/cbe2e0fe7279/image-20220723162056406.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语语法指南总结"/></a><div class="content"><a class="title" href="/posts/cbe2e0fe7279/" title="日语语法指南总结">日语语法指南总结</a><time datetime="2022-06-19T08:47:28.000Z" title="发表于 2022-06-19 16:47:28">2022-06-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/095fc3c593e9/" title="日语学习实践"><img src="/posts/095fc3c593e9/%E5%96%B5%E5%B8%95%E6%96%AF.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语学习实践"/></a><div class="content"><a class="title" href="/posts/095fc3c593e9/" title="日语学习实践">日语学习实践</a><time datetime="2022-06-05T07:25:29.000Z" title="发表于 2022-06-05 15:25:29">2022-06-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4e8c05efecf6/" title="浏览器"><img src="/posts/4e8c05efecf6/a3fcdfe3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浏览器"/></a><div class="content"><a class="title" href="/posts/4e8c05efecf6/" title="浏览器">浏览器</a><time datetime="2022-05-14T16:08:43.000Z" title="发表于 2022-05-15 00:08:43">2022-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2d7ac4ddeba0/" title="第十三课 机の　上に　本が　三冊　あります"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十三课 机の　上に　本が　三冊　あります"/></a><div class="content"><a class="title" href="/posts/2d7ac4ddeba0/" title="第十三课 机の　上に　本が　三冊　あります">第十三课 机の　上に　本が　三冊　あります</a><time datetime="2022-03-07T15:24:22.000Z" title="发表于 2022-03-07 23:24:22">2022-03-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/9ebdad2225b5/" title="第十二课 李さんは　森さんより　若いです"><img src="/images/biaori.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第十二课 李さんは　森さんより　若いです"/></a><div class="content"><a class="title" href="/posts/9ebdad2225b5/" title="第十二课 李さんは　森さんより　若いです">第十二课 李さんは　森さんより　若いです</a><time datetime="2022-03-06T02:48:20.000Z" title="发表于 2022-03-06 10:48:20">2022-03-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
