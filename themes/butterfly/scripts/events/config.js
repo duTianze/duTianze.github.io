@@ -6,7 +6,6 @@
 
 'use strict'
 
-const { version } = require('../../package.json')
 const path = require('path')
 
 hexo.extend.filter.register('before_generate', () => {
@@ -16,15 +15,6 @@ hexo.extend.filter.register('before_generate', () => {
   /**
    * Merge CDN
    */
-
-  const internalSrcCDN = {
-    main_css: '/css/index.css',
-    main: `https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@${version}/source/js/main.min.js`,
-    utils: `https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@${version}/source/js/utils.min.js`,
-    translate: `https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@${version}/source/js/tw_cn.min.js`,
-    local_search: `https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@${version}/source/js/search/local-search.min.js`,
-    algolia_js: `https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@${version}/source/js/search/algolia.min.js`,
-  }
 
   const internalSrcLocal = {
     main_css: '/css/index.css',
@@ -94,7 +84,6 @@ hexo.extend.filter.register('before_generate', () => {
   const defaultVal = (obj, choose) => {
     if (obj === 'internal') {
       if (choose === 'local') return internalSrcLocal
-      else return internalSrcCDN
     }
 
     if (obj === 'external') {
