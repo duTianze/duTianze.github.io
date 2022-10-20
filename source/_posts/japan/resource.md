@@ -164,10 +164,6 @@ cover: 喵帕斯.gif
 
 > [免费日语阅读网站](https://teamjapanese.com/free-websites-japanese-reading-practice-every-level/)
 
-## [easyjapanesestories](https://www.easyjapanesestories.com/)
-
-![image-20220605171427984](resource/image-20220605171427984.png)
-
 ## [小学生童话](http://www.hukumusume.com/douwa/0_6/0nen.html)
 
 ![image-20220605180033936](resource/image-20220605180033936.png)
