@@ -150,14 +150,6 @@ cover: 喵帕斯.gif
 
 ![image-20220609235248838](resource/image-20220609235248838.png)
 
-## [泛读](https://tadoku.org/japanese/book-search/?level=l0)
-
-![image-20220605180829924](resource/image-20220605180829924.png)
-
-## [HNK for school](https://www.nhk.or.jp/school/)
-
-![image-20220605170844368](resource/image-20220605170844368.png)
-
 ## [watanoc](https://watanoc.com/)
 
 ![image-20220605171111557](resource/image-20220605171111557.png)
