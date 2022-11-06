@@ -51,11 +51,11 @@ cover: 喵帕斯.gif
 
 ![shirokuma-cafe-simple-manga-japanese-practice-reading](resource/3349-beginner-japanese-reading-practice-book-15.jpg)
 
-###  [免费的原版动漫](https://doki1001.com/comics/)
+###  [[Manga Raw JP](https://mangarawjp.io/)](https://mangarawjp.io/)
 
 ![image-20220605175829128](resource/image-20220605175829128.png)
 
-### [非营利性漫画网站](https://bilingualmanga.net/)
+### [bilingual manga](https://bilingualmanga.net/)
 
 ![image-20220605175709320](resource/image-20220605175709320.png)
 
