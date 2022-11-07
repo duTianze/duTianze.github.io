@@ -10,26 +10,8 @@
     
     
     <url>
-        <loc>https://dutianze.github.io/friends/</loc>
-        <lastmod>2022-11-06T08:24:25.573Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://dutianze.github.io/tags/</loc>
-        <lastmod>2022-11-06T08:24:25.573Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
         <loc>https://dutianze.github.io/about/</loc>
-        <lastmod>2022-11-06T08:24:25.569Z</lastmod>
+        <lastmod>2022-11-07T11:10:28.347Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -38,7 +20,7 @@
     
     <url>
         <loc>https://dutianze.github.io/categories/</loc>
-        <lastmod>2022-11-06T08:24:25.569Z</lastmod>
+        <lastmod>2022-11-07T11:10:28.347Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -47,7 +29,25 @@
     
     <url>
         <loc>https://dutianze.github.io/contact/</loc>
-        <lastmod>2022-11-06T08:24:25.569Z</lastmod>
+        <lastmod>2022-11-07T11:10:28.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://dutianze.github.io/friends/</loc>
+        <lastmod>2022-11-07T11:10:28.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://dutianze.github.io/tags/</loc>
+        <lastmod>2022-11-07T11:10:28.347Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -56,7 +56,7 @@
     
     <url>
         <loc>https://dutianze.github.io/404.html</loc>
-        <lastmod>2022-11-06T08:24:25.537Z</lastmod>
+        <lastmod>2022-11-07T11:10:28.311Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
