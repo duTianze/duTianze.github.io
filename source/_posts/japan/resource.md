@@ -92,7 +92,7 @@ cover: 喵帕斯.gif
 
 ## 日剧
 
-### [在线之家](https://www.zxzjtv.com/)
+### [在线之家](https://zxzj.vip/)
 
 ![image-20220605164552343](resource/image-20220605164552343.png)
 
