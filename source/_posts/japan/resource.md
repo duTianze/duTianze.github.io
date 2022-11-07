@@ -166,12 +166,6 @@ cover: 喵帕斯.gif
 
 > https://doda.jp/guide/
 
-## [面接で必ず聞かれる5つの質問](xdoda.jp/guide/mensetsu/interview/?sid=GuideTop-step3-1) 
-
-## [職務経歴書テンプレート](https://doda.jp/guide/syokureki/resume/it01.html)
-
-## [職務履歴書](https://gist.github.com/morisho0/bd08f66a65c95b4f8d81a8c3e7838aec)
-
 # Others web site
 
 - https://crunchynihongo.com/
