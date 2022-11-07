@@ -106,7 +106,7 @@ cover: 喵帕斯.gif
 
 ### [Spotify歌单](https://open.spotify.com/playlist/7h6fxDLiigEaL4sdo5ZCik?si=39207de4ba1a450f)
 
-### [bilibili日语听力收藏夹](https://space.bilibili.com/8135027/favlist?fid=1601433527&ftype=create)
+### [bilibili收藏夹](https://space.bilibili.com/8135027/favlist?fid=1549209627)
 
 ### [Youyube日语收藏夹](https://youtube.com/playlist?list=PLrMXu4RLWj8WHExaeRbgF-6BX7INPnxwg)
 
