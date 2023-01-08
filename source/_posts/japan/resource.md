@@ -35,10 +35,6 @@ cover: 喵帕斯.gif
 
 ![](resource/98151589.png)
 
-### [少年ジャンプ漫画賞](https://www.jump-mangasho.com/)
-
-![](resource/637a83d9.png)
-
 ### [徒然チルドレン](http://tsuredurechildren.com/%E3%83%9E%E3%83%B3%E3%82%AC/)
 
 ![img](resource/top00.jpg)
@@ -73,15 +69,15 @@ cover: 喵帕斯.gif
 
 ![image-20220723155837281](resource/image-20220723155837281.png)
 
-### [animelon - 看动漫学日语](https://animelon.com/)
+### [animelon](https://animelon.com/)
 
 ![](resource/945a473e.png)
 
-### [animebee - 英语字幕](https://animebee.to/home)
+### [animebee](https://animebee.cc)
 
 ![](resource/9c4d92a3.png)
 
-### [zoro - 无字幕](https://zoro.to/)
+### [zoro](https://zoro.to/)
 
 ![](resource/019fca58.png)
 
@@ -165,8 +161,3 @@ cover: 喵帕斯.gif
 ![image-20220605182004578](resource/image-20220605182004578.png)
 
 > https://doda.jp/guide/
-
-# Others web site
-
-- https://crunchynihongo.com/
-- https://www.wasabi-jpn.com/
