@@ -146,10 +146,6 @@ cover: 喵帕斯.gif
 
 ![image-20220609235248838](resource/image-20220609235248838.png)
 
-## [watanoc](https://watanoc.com/)
-
-![image-20220605171111557](resource/image-20220605171111557.png)
-
 > [免费日语阅读网站](https://teamjapanese.com/free-websites-japanese-reading-practice-every-level/)
 
 ## [小学生童话](http://www.hukumusume.com/douwa/0_6/0nen.html)
