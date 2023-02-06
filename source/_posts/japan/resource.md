@@ -73,7 +73,7 @@ cover: 喵帕斯.gif
 
 ![](resource/945a473e.png)
 
-### [animebee](https://animebee.cc)
+### [animebee](https://animebee.cc/)
 
 ![](resource/9c4d92a3.png)
 
