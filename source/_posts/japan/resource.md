@@ -39,11 +39,11 @@ cover: 喵帕斯.gif
 
 ![img](resource/top00.jpg)
 
-### [Yotsuba](https://bilingualmanga.net/yotsubaclickable-text/)
+### [Yotsuba](https://bilingualmanga.net/manga/635d545a6d960eb0ac756b0e?lang=jp)
 
 ![Learning Japanese is Fun!](resource/32a1d6_95bd1ff7988d2dd9a91f4615779ff82f.jpg)
 
-### [白熊咖啡厅](https://bilingualmanga.net/shirokuma-cafeclickable-text/)
+### [白熊咖啡厅](https://bilingualmanga.net/manga/635d545a6d960eb0ac756b0c?lang=jp)
 
 ![shirokuma-cafe-simple-manga-japanese-practice-reading](resource/3349-beginner-japanese-reading-practice-book-15.jpg)
 
