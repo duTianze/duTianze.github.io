@@ -245,13 +245,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"previous/jupyter.md": {
-	id: "previous/jupyter.md";
-  slug: "previous/jupyter";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "previous/markdown-tutorial.md": {
 	id: "previous/markdown-tutorial.md";
   slug: "previous/markdown-tutorial";
